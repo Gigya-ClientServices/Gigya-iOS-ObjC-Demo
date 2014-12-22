@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import <FacebookSDK/FacebookSDK.h>
+#import <GigyaSDK/Gigya.h>
+
+
 
 @interface AppDelegate ()
 
@@ -14,9 +18,12 @@
 
 @implementation AppDelegate
 
+static NSString * const kClientId = @"224059159380-llqo0j946bbl3s4rqu35kkolpmhpl07h.apps.googleusercontent.com";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [Gigya initWithAPIKey:@"PUT-YOUR-APIKEY-HERE"];
+    
     return YES;
 }
 
@@ -36,10 +43,19 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+
+    // Logs 'install' and 'app activate' App Events.
+    [Gigya handleDidBecomeActive];
+    //[FBAppEvents activateApp];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    return [Gigya handleOpenURL:url sourceApplication:sourceApplication annotation:annotation];
 }
 
 @end

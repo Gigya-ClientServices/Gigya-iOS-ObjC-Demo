@@ -18,8 +18,37 @@
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.gigya.Gigya-iOS-Demos</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.gigya.Gigya-iOS-Demos</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb368592606648443</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>FacebookAppID</key>
+	<string>368592606648443</string>
+	<key>FacebookDisplayName</key>
+	<string>Gigy­a­-­M­o­b­i­l­e­-­Demos</string>
+	<key>GigyaLoginDontLeaveApp</key>
+	<true/>
+	<key>GooglePlusClientID</key>
+	<string>224059159380-llqo0j946bbl3s4rqu35kkolpmhpl07h.apps.googleusercontent.com</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
