@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="afW-Bl-Wwh">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Gigya iOS Demos-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mX5-ks-JrB">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mX5-ks-JrB">
                                 <rect key="frame" x="16" y="108" width="568" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -35,10 +35,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="gg6-Ip-e3x" kind="show" id="mKE-aq-Haq"/>
+                                    <segue destination="rWH-MK-fWT" kind="show" id="mKE-aq-Haq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prV-d0-KKa">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prV-d0-KKa">
                                 <rect key="frame" x="16" y="50" width="568" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -56,10 +56,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="MUc-jc-EiL" kind="show" id="ego-QD-dVs"/>
+                                    <segue destination="Ae1-m6-vHy" kind="show" id="ego-QD-dVs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIY-y3-a1a">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIY-y3-a1a">
                                 <rect key="frame" x="16" y="361" width="568" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -77,10 +77,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="kGF-Y5-bOG" kind="show" id="3Ne-ta-nQs"/>
+                                    <segue destination="DBk-ek-JiZ" kind="show" id="3Ne-ta-nQs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBu-Xp-HHu">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBu-Xp-HHu">
                                 <rect key="frame" x="16" y="263" width="568" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -98,10 +98,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="mk4-My-KgU" kind="show" id="re1-wb-phx"/>
+                                    <segue destination="KeG-iJ-unE" kind="show" id="re1-wb-phx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjq-uj-CaB">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjq-uj-CaB">
                                 <rect key="frame" x="16" y="205" width="568" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -119,10 +119,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="B6t-i5-4hH" kind="show" id="j7z-Kl-KQz"/>
+                                    <segue destination="HXB-un-10o" kind="show" id="j7z-Kl-KQz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RgW-b8-FYn">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RgW-b8-FYn">
                                 <rect key="frame" x="16" y="530" width="568" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="titleShadowOffset" width="5" height="5"/>
@@ -137,25 +137,25 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login Behaviors" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GwN-Xd-8nr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Login Behaviors" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GwN-Xd-8nr">
                                 <rect key="frame" x="16" y="20" width="124" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile Session Management" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAr-mP-HhI">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Mobile Session Management" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAr-mP-HhI">
                                 <rect key="frame" x="16" y="176" width="223" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social Connectivity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqP-XQ-uIp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Social Connectivity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqP-XQ-uIp">
                                 <rect key="frame" x="16" y="332" width="148" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="To4-Td-7VG">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="To4-Td-7VG">
                                 <rect key="frame" x="16" y="419" width="568" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -173,7 +173,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="Sqy-4m-LKg" kind="show" id="ioF-zG-AyD"/>
+                                    <segue destination="ybY-AZ-yCb" kind="show" id="ioF-zG-AyD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -209,12 +209,13 @@
                             <constraint firstItem="RAr-mP-HhI" firstAttribute="top" secondItem="mX5-ks-JrB" secondAttribute="bottom" constant="18" id="xnY-Wp-wgW"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Gigya iOS Demos" id="UjS-Zw-xlr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-383" y="-1147"/>
+            <point key="canvasLocation" x="429" y="-1147"/>
         </scene>
-        <!--Comments View Controller-->
+        <!--Comments View-->
         <scene sceneID="8st-7Y-BE0">
             <objects>
                 <viewController id="Sqy-4m-LKg" customClass="CommentsViewController" sceneMemberID="viewController">
@@ -225,34 +226,15 @@
                     <view key="view" contentMode="scaleToFill" id="Qa5-l3-veE">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTT-Ks-ykA">
-                                <rect key="frame" x="16" y="530" width="568" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <size key="titleShadowOffset" width="5" height="5"/>
-                                <state key="normal" title="Return to Demo Nav"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUICOlor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="zxv-Nf-dp6"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Comments View" id="yzt-es-m2V"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VRs-1z-hVI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-383" y="-406"/>
+            <point key="canvasLocation" x="2144" y="532"/>
         </scene>
-        <!--Publish Action Controller-->
+        <!--Publish User Action-->
         <scene sceneID="Vq8-KE-SBQ">
             <objects>
                 <viewController id="kGF-Y5-bOG" customClass="PublishActionController" sceneMemberID="viewController">
@@ -263,40 +245,15 @@
                     <view key="view" contentMode="scaleToFill" id="tI1-Th-FQC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2NB-4p-DoT">
-                                <rect key="frame" x="16" y="530" width="568" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <size key="titleShadowOffset" width="5" height="5"/>
-                                <state key="normal" title="Return to Demo Nav"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUICOlor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="yRa-0u-btP"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="2NB-4p-DoT" firstAttribute="top" secondItem="GHb-AK-Y6M" secondAttribute="bottom" constant="510" id="HHJ-fr-TNL"/>
-                            <constraint firstItem="2NB-4p-DoT" firstAttribute="leading" secondItem="tI1-Th-FQC" secondAttribute="leadingMargin" id="S4Y-88-e4a"/>
-                            <constraint firstAttribute="bottom" secondItem="2NB-4p-DoT" secondAttribute="bottom" constant="20" symbolic="YES" id="eqp-jw-edP"/>
-                            <constraint firstItem="2NB-4p-DoT" firstAttribute="trailing" secondItem="tI1-Th-FQC" secondAttribute="trailingMargin" id="zD3-QM-5BQ"/>
-                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Publish User Action" id="uXI-9o-f51"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4cd-PA-9nE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-383" y="985"/>
+            <point key="canvasLocation" x="1459" y="532"/>
         </scene>
-        <!--RaaS View Controller-->
+        <!--RaaS Plugin View-->
         <scene sceneID="988-nr-6PJ">
             <objects>
                 <viewController id="gg6-Ip-e3x" customClass="RaaSViewController" sceneMemberID="viewController">
@@ -307,40 +264,15 @@
                     <view key="view" contentMode="scaleToFill" id="DMI-a8-SBG">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vT-V1-0to">
-                                <rect key="frame" x="16" y="530" width="568" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <size key="titleShadowOffset" width="5" height="5"/>
-                                <state key="normal" title="Return to Demo Nav"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUICOlor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="2zQ-cK-mbs"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="6vT-V1-0to" secondAttribute="bottom" constant="20" symbolic="YES" id="XjK-yI-dQa"/>
-                            <constraint firstItem="6vT-V1-0to" firstAttribute="trailing" secondItem="DMI-a8-SBG" secondAttribute="trailingMargin" id="aLR-yT-bzx"/>
-                            <constraint firstItem="6vT-V1-0to" firstAttribute="top" secondItem="qhb-8d-k07" secondAttribute="bottom" constant="510" id="f7l-US-eSZ"/>
-                            <constraint firstItem="6vT-V1-0to" firstAttribute="leading" secondItem="DMI-a8-SBG" secondAttribute="leadingMargin" id="tda-Ot-l2Q"/>
-                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="RaaS Plugin View" id="M0R-EG-jf8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XNh-KL-1vL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="392" y="-406"/>
+            <point key="canvasLocation" x="-580" y="532"/>
         </scene>
-        <!--Session Check Controller-->
+        <!--Mobile Session Check-->
         <scene sceneID="VkY-Ud-tJ9">
             <objects>
                 <viewController id="B6t-i5-4hH" customClass="SessionCheckController" sceneMemberID="viewController">
@@ -351,40 +283,15 @@
                     <view key="view" contentMode="scaleToFill" id="lfF-ed-iCY">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZg-Yg-QvR">
-                                <rect key="frame" x="16" y="530" width="568" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <size key="titleShadowOffset" width="5" height="5"/>
-                                <state key="normal" title="Return to Demo Nav"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUICOlor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Zwi-hp-LsM"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="tZg-Yg-QvR" secondAttribute="bottom" constant="20" symbolic="YES" id="9XA-xw-utR"/>
-                            <constraint firstItem="tZg-Yg-QvR" firstAttribute="top" secondItem="kAw-op-1lf" secondAttribute="bottom" constant="510" id="XSK-PI-6ss"/>
-                            <constraint firstItem="tZg-Yg-QvR" firstAttribute="trailing" secondItem="lfF-ed-iCY" secondAttribute="trailingMargin" id="aFv-PB-ehM"/>
-                            <constraint firstItem="tZg-Yg-QvR" firstAttribute="leading" secondItem="lfF-ed-iCY" secondAttribute="leadingMargin" id="rtD-Qq-dWB"/>
-                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Mobile Session Check" id="l8i-zp-cUD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SUj-IY-YF9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="392" y="292"/>
+            <point key="canvasLocation" x="85" y="532"/>
         </scene>
-        <!--Web Bridge Controller-->
+        <!--GSWebBridge-->
         <scene sceneID="JAu-KF-Gab">
             <objects>
                 <viewController id="mk4-My-KgU" customClass="GSWebBridgeController" sceneMemberID="viewController">
@@ -395,40 +302,15 @@
                     <view key="view" contentMode="scaleToFill" id="82T-Pw-Bu5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WU-vi-YMi">
-                                <rect key="frame" x="16" y="530" width="568" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <size key="titleShadowOffset" width="5" height="5"/>
-                                <state key="normal" title="Return to Demo Nav"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUICOlor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="6Yd-jl-8z8"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="4WU-vi-YMi" firstAttribute="top" secondItem="cgM-k1-kAU" secondAttribute="bottom" constant="510" id="6Io-ht-927"/>
-                            <constraint firstItem="4WU-vi-YMi" firstAttribute="trailing" secondItem="82T-Pw-Bu5" secondAttribute="trailingMargin" id="Brc-bq-8cR"/>
-                            <constraint firstAttribute="bottom" secondItem="4WU-vi-YMi" secondAttribute="bottom" constant="20" symbolic="YES" id="js2-dy-Iw5"/>
-                            <constraint firstItem="4WU-vi-YMi" firstAttribute="leading" secondItem="82T-Pw-Bu5" secondAttribute="leadingMargin" id="tiL-an-vWh"/>
-                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="GSWebBridge" id="hAj-hJ-K2W"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C38-Uu-dQj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-383" y="292"/>
+            <point key="canvasLocation" x="755" y="532"/>
         </scene>
-        <!--Native Login Controller-->
+        <!--Native Social Login-->
         <scene sceneID="9M7-pD-i4b">
             <objects>
                 <viewController id="MUc-jc-EiL" customClass="NativeLoginController" sceneMemberID="viewController">
@@ -439,41 +321,139 @@
                     <view key="view" contentMode="scaleToFill" id="OFA-NM-Ncc">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mpr-Ks-Pmm">
-                                <rect key="frame" x="16" y="530" width="568" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <size key="titleShadowOffset" width="5" height="5"/>
-                                <state key="normal" title="Return to Demo Nav"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUICOlor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="fYe-fL-gDJ"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="Mpr-Ks-Pmm" secondAttribute="bottom" constant="20" symbolic="YES" id="4MK-24-bHh"/>
-                            <constraint firstItem="Mpr-Ks-Pmm" firstAttribute="top" secondItem="WEm-M5-EGA" secondAttribute="bottom" constant="510" id="6LR-46-yWW"/>
-                            <constraint firstItem="Mpr-Ks-Pmm" firstAttribute="trailing" secondItem="OFA-NM-Ncc" secondAttribute="trailingMargin" id="mmQ-Vu-fCJ"/>
-                            <constraint firstItem="Mpr-Ks-Pmm" firstAttribute="leading" secondItem="OFA-NM-Ncc" secondAttribute="leadingMargin" id="rtg-Tp-BTy"/>
-                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Native Social Login" id="Ywv-9A-NhX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e46-rE-csH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="392" y="-1147"/>
+            <point key="canvasLocation" x="-1286" y="532"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9si-Jl-0gt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="afW-Bl-Wwh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="chY-Ms-c2y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="a4q-ft-101"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ej-Tu-eGj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-383" y="-1147"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HQm-78-Fuy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ybY-AZ-yCb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Pye-uF-bR4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Sqy-4m-LKg" kind="relationship" relationship="rootViewController" id="jpN-yz-rCv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U6f-8c-CYu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2144" y="-210"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2nM-LA-biH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DBk-ek-JiZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="t89-ox-xgN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kGF-Y5-bOG" kind="relationship" relationship="rootViewController" id="UMh-4K-D6e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bGA-QG-xmf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1459" y="-210"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VxT-fe-n9j">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KeG-iJ-unE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="J1b-6n-q5l">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mk4-My-KgU" kind="relationship" relationship="rootViewController" id="cFS-Xq-yhV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iL8-Wq-K8t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="755" y="-210"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qGt-ee-DBW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HXB-un-10o" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fl9-ea-N8g">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="B6t-i5-4hH" kind="relationship" relationship="rootViewController" id="6IV-nt-hxd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YYQ-Se-pNj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85" y="-210"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IG3-gd-r3U">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rWH-MK-fWT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mTv-S3-rM6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gg6-Ip-e3x" kind="relationship" relationship="rootViewController" id="OHg-nh-XEr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BLy-UO-hlK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-580" y="-210"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SkO-vK-MFq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ae1-m6-vHy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EnY-wc-rtn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MUc-jc-EiL" kind="relationship" relationship="rootViewController" id="Bzg-2u-uas"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bTr-Wq-0YP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1286" y="-210"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="yRa-0u-btP"/>
-    </inferredMetricsTieBreakers>
 </document>

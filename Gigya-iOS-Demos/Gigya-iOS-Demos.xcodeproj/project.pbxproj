@@ -534,6 +534,7 @@
 				52BCE2011A48A65900924AD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52BCE2021A48A65900924AD8 /* Build configuration list for PBXNativeTarget "Gigya-iOS-DemosTests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +543,7 @@
 				52BCE2041A48A65900924AD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
