@@ -27,13 +27,24 @@
 
 
 - (IBAction)logoutButtonAction:(id)sender {
-    [Gigya logout];
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Gigya Logout"
-                                                    message:@"You have successfully logged out of Gigya."
-                                                   delegate:nil
-                                          cancelButtonTitle:@"OK"
-                                          otherButtonTitles:nil];
-    [alert show];
+    [Gigya logoutWithCompletionHandler:^(GSResponse *response, NSError *error) {
+        UIAlertView *alert;
+        if (!error) {
+            alert = [[UIAlertView alloc] initWithTitle:@"Gigya Logout"
+                                                            message:@"You have successfully logged out of Gigya."
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+        } else {
+            alert = [[UIAlertView alloc] initWithTitle:@"Gigya Logout"
+                                               message:[@"There was a problem logging out. Gigya returned error code " stringByAppendingFormat:@"%d",response.errorCode]
+                                              delegate:nil
+                                     cancelButtonTitle:@"OK"
+                                     otherButtonTitles:nil];
+        }
+        [alert show];
+    }];
+
 }
 
 @end
