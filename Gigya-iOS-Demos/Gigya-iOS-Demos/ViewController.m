@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <GigyaSDK/Gigya.h>
 
 @interface ViewController ()
 
@@ -22,6 +23,17 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (IBAction)logoutButtonAction:(id)sender {
+    [Gigya logout];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Gigya Logout"
+                                                    message:@"You have successfully logged out of Gigya."
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
 }
 
 @end

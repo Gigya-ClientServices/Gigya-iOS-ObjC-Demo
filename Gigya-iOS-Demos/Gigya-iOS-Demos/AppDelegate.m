@@ -11,7 +11,6 @@
 #import <GigyaSDK/Gigya.h>
 
 
-
 @interface AppDelegate ()
 
 @end
