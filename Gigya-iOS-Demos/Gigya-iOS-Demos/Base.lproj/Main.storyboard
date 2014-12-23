@@ -264,7 +264,28 @@
                     <view key="view" contentMode="scaleToFill" id="DMI-a8-SBG">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z71-7Z-xfT">
+                                <rect key="frame" x="16" y="275" width="568" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="NyG-LG-UCs"/>
+                                </constraints>
+                                <state key="normal" title="Show Screen Set">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showScreenSet:" destination="gg6-Ip-e3x" eventType="touchUpInside" id="nhu-wa-plU"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="z71-7Z-xfT" firstAttribute="leading" secondItem="DMI-a8-SBG" secondAttribute="leadingMargin" id="8o4-Eo-Fuu"/>
+                            <constraint firstAttribute="centerY" secondItem="z71-7Z-xfT" secondAttribute="centerY" id="Fbq-hb-u1N"/>
+                            <constraint firstItem="z71-7Z-xfT" firstAttribute="trailing" secondItem="DMI-a8-SBG" secondAttribute="trailingMargin" id="Iok-8C-WBQ"/>
+                            <constraint firstAttribute="centerX" secondItem="z71-7Z-xfT" secondAttribute="centerX" id="PI3-me-vXi"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="RaaS Plugin View" id="M0R-EG-jf8"/>
                 </viewController>

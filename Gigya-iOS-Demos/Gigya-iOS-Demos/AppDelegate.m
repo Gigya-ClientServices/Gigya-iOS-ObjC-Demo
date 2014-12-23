@@ -22,7 +22,7 @@ static NSString * const kClientId = @"224059159380-llqo0j946bbl3s4rqu35kkolpmhpl
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [Gigya initWithAPIKey:@"PUT-YOUR-APIKEY-HERE"];
+    [Gigya initWithAPIKey:@"3_hoQxVv5W44L7c5fhBbaDFi9gOaaa2ZpbrBXlmlJoWISEk4D5J47X2iRnWwKnWyMW"];
     
     return YES;
 }

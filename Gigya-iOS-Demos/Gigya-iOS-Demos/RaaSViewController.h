@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GigyaSDK/Gigya.h>
 
-@interface RaaSViewController : UIViewController
+@interface RaaSViewController : UIViewController <GSPluginViewDelegate>
 
+- (IBAction)showScreenSet:(id)sender;
 
 @end
