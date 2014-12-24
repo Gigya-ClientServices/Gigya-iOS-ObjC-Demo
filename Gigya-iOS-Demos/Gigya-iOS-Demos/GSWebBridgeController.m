@@ -9,6 +9,7 @@
 #import "GSWebBridgeController.h"
 
 @interface GSWebBridgeController ()
+@property (weak, nonatomic) IBOutlet UIScrollView *webBridgeScrollView;
 
 @end
 
