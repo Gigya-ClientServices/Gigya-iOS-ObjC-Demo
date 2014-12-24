@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="afW-Bl-Wwh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="afW-Bl-Wwh">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -176,7 +176,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="ybY-AZ-yCb" kind="show" id="ioF-zG-AyD"/>
+                                    <segue destination="ybY-AZ-yCb" kind="show" id="nKi-Qg-gBd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -229,7 +229,51 @@
                     <view key="view" contentMode="scaleToFill" id="Qa5-l3-veE">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVq-UB-8n4">
+                                <rect key="frame" x="16" y="72" width="568" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9nz-v7-oN9"/>
+                                </constraints>
+                                <state key="normal" title="Show Comments (Pop Over)">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showCommentsAsDialog:" destination="Sqy-4m-LKg" eventType="touchUpInside" id="5l6-Tr-ZdV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNV-bS-XbK">
+                                <rect key="frame" x="16" y="130" width="568" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HGe-8v-nnS"/>
+                                </constraints>
+                                <state key="normal" title="Show Comments (Sub View)">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showCommentsAsSubView:" destination="Sqy-4m-LKg" eventType="touchUpInside" id="kfV-FZ-kab"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TNV-bS-XbK" firstAttribute="trailing" secondItem="Qa5-l3-veE" secondAttribute="trailingMargin" id="6wQ-g3-vgS"/>
+                            <constraint firstItem="TNV-bS-XbK" firstAttribute="centerY" secondItem="Qa5-l3-veE" secondAttribute="centerY" id="9F5-Y5-Wwp"/>
+                            <constraint firstItem="hVq-UB-8n4" firstAttribute="leading" secondItem="TNV-bS-XbK" secondAttribute="leading" id="APc-Sd-3C5"/>
+                            <constraint firstItem="TNV-bS-XbK" firstAttribute="leading" secondItem="Qa5-l3-veE" secondAttribute="leadingMargin" id="DFM-tn-Lnu"/>
+                            <constraint firstItem="TNV-bS-XbK" firstAttribute="top" secondItem="hVq-UB-8n4" secondAttribute="bottom" constant="29" id="O6E-XE-mb8"/>
+                            <constraint firstItem="hVq-UB-8n4" firstAttribute="trailing" secondItem="TNV-bS-XbK" secondAttribute="trailing" id="P9I-mZ-ADi"/>
+                            <constraint firstItem="hVq-UB-8n4" firstAttribute="top" secondItem="bUJ-Sr-CTe" secondAttribute="bottom" constant="8" id="tqd-Ce-iTA"/>
+                            <constraint firstItem="TNV-bS-XbK" firstAttribute="top" secondItem="hVq-UB-8n4" secondAttribute="bottom" constant="8" id="xQ4-0q-fgu"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9F5-Y5-Wwp"/>
+                                <exclude reference="O6E-XE-mb8"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Comments View" id="yzt-es-m2V"/>
                 </viewController>
