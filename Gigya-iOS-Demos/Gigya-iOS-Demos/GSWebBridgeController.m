@@ -27,7 +27,7 @@
     [super viewDidLoad];
 
     // Load the webbridge URL
-    NSString *urlAddress = @"http://jay.gigya-cs.com/raas_share_gm_simple_events.html";
+    NSString *urlAddress = @"http://demos.gigya-cs.com/main_demo.html";
     NSURL *url = [NSURL URLWithString:urlAddress];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     [_webBridgeWebView loadRequest:requestObj];
