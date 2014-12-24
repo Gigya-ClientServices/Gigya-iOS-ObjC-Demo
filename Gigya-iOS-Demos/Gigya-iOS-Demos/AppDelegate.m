@@ -11,7 +11,7 @@
 #import <GigyaSDK/Gigya.h>
 
 
-@interface AppDelegate ()
+@interface AppDelegate () <GSAccountsDelegate>
 
 @end
 
@@ -23,7 +23,17 @@ static NSString * const kClientId = @"224059159380-llqo0j946bbl3s4rqu35kkolpmhpl
     // Override point for customization after application launch.
     [Gigya initWithAPIKey:@"3_hoQxVv5W44L7c5fhBbaDFi9gOaaa2ZpbrBXlmlJoWISEk4D5J47X2iRnWwKnWyMW"];
     
+    [Gigya setAccountsDelegate:self];
+    
     return YES;
+}
+
+- (void)accountDidLogin:(GSAccount *)account {
+    
+}
+
+- (void)accountDidLogout {
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
