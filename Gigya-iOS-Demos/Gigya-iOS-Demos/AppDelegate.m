@@ -33,7 +33,13 @@ static NSString * const kClientId = @"224059159380-llqo0j946bbl3s4rqu35kkolpmhpl
 }
 
 - (void)accountDidLogout {
-    
+    UIAlertView *alert;
+    alert = [[UIAlertView alloc] initWithTitle:@"Gigya Logout"
+                                       message:@"You have successfully logged out of Gigya."
+                                      delegate:nil
+                             cancelButtonTitle:@"OK"
+                             otherButtonTitles:nil];
+    [alert show];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
