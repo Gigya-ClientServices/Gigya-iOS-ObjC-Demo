@@ -29,7 +29,6 @@
 		52BCE22B1A48DAD300924AD8 /* GigyaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BCE2271A48DAD300924AD8 /* GigyaSDK.framework */; };
 		52BCE22C1A48DAD300924AD8 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BCE2281A48DAD300924AD8 /* GoogleOpenSource.framework */; };
 		52BCE22D1A48DAD300924AD8 /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BCE2291A48DAD300924AD8 /* GooglePlus.framework */; };
-		52BCE2341A49007700924AD8 /* RaaSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCE2331A49007700924AD8 /* RaaSViewController.m */; };
 		52BCE23F1A49028500924AD8 /* CommentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCE2361A49028500924AD8 /* CommentsViewController.m */; };
 		52BCE2401A49028500924AD8 /* GSWebBridgeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCE2381A49028500924AD8 /* GSWebBridgeController.m */; };
 		52BCE2421A49028500924AD8 /* PublishActionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCE23C1A49028500924AD8 /* PublishActionController.m */; };
@@ -75,8 +74,6 @@
 		52BCE2271A48DAD300924AD8 /* GigyaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GigyaSDK.framework; path = lib/GigyaSDK.framework; sourceTree = "<group>"; };
 		52BCE2281A48DAD300924AD8 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleOpenSource.framework; path = lib/GoogleOpenSource.framework; sourceTree = "<group>"; };
 		52BCE2291A48DAD300924AD8 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlus.framework; path = lib/GooglePlus.framework; sourceTree = "<group>"; };
-		52BCE2321A48FE8D00924AD8 /* RaaSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaaSViewController.h; sourceTree = "<group>"; };
-		52BCE2331A49007700924AD8 /* RaaSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RaaSViewController.m; sourceTree = "<group>"; };
 		52BCE2351A49028500924AD8 /* CommentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentsViewController.h; sourceTree = "<group>"; };
 		52BCE2361A49028500924AD8 /* CommentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentsViewController.m; sourceTree = "<group>"; };
 		52BCE2371A49028500924AD8 /* GSWebBridgeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSWebBridgeController.h; sourceTree = "<group>"; };
@@ -147,8 +144,6 @@
 				52BCE2381A49028500924AD8 /* GSWebBridgeController.m */,
 				52BCE23B1A49028500924AD8 /* PublishActionController.h */,
 				52BCE23C1A49028500924AD8 /* PublishActionController.m */,
-				52BCE2321A48FE8D00924AD8 /* RaaSViewController.h */,
-				52BCE2331A49007700924AD8 /* RaaSViewController.m */,
 				52BCE1E31A48A65800924AD8 /* AppDelegate.h */,
 				52BCE1E41A48A65800924AD8 /* AppDelegate.m */,
 				52BCE1E61A48A65800924AD8 /* ViewController.h */,
@@ -313,7 +308,6 @@
 			files = (
 				52BCE1E81A48A65800924AD8 /* ViewController.m in Sources */,
 				52BCE2401A49028500924AD8 /* GSWebBridgeController.m in Sources */,
-				52BCE2341A49007700924AD8 /* RaaSViewController.m in Sources */,
 				52BCE1E51A48A65800924AD8 /* AppDelegate.m in Sources */,
 				52BCE2421A49028500924AD8 /* PublishActionController.m in Sources */,
 				52BCE23F1A49028500924AD8 /* CommentsViewController.m in Sources */,

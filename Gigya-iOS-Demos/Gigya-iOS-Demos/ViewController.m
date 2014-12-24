@@ -99,4 +99,17 @@
     }
 }
 
+- (IBAction)showScreenSet:(id)sender {
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    [params setObject:@"DefaultMobile-RegistrationLogin" forKey:@"screenSet"];
+    [Gigya showPluginDialogOver:self plugin:@"accounts.screenSet" parameters:params completionHandler:^(BOOL closedByUser, NSError *error) {
+        if (!error) {
+            // Login was successful
+        }
+        else {
+            // Handle error
+        }
+    }];
+}
+
 @end

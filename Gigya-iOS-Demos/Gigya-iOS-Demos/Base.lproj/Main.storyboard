@@ -24,7 +24,7 @@
                                     <constraint firstAttribute="height" constant="50" id="XPO-ZZ-XSW"/>
                                 </constraints>
                                 <size key="titleShadowOffset" width="5" height="5"/>
-                                <state key="normal" title="RaaS Plugin View"/>
+                                <state key="normal" title="Registration as a Service"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
@@ -35,7 +35,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="rWH-MK-fWT" kind="show" id="mKE-aq-Haq"/>
+                                    <action selector="showScreenSet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PmA-3C-bM7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prV-d0-KKa">
@@ -303,7 +303,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VRs-1z-hVI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1508" y="532"/>
+            <point key="canvasLocation" x="1112" y="504"/>
         </scene>
         <!--Publish User Action-->
         <scene sceneID="Vq8-KE-SBQ">
@@ -404,47 +404,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4cd-PA-9nE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="823" y="532"/>
-        </scene>
-        <!--RaaS Plugin View-->
-        <scene sceneID="988-nr-6PJ">
-            <objects>
-                <viewController id="gg6-Ip-e3x" customClass="RaaSViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="qhb-8d-k07"/>
-                        <viewControllerLayoutGuide type="bottom" id="r51-Ww-09i"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="DMI-a8-SBG">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z71-7Z-xfT">
-                                <rect key="frame" x="16" y="275" width="568" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="NyG-LG-UCs"/>
-                                </constraints>
-                                <state key="normal" title="Show Screen Set">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="showScreenSet:" destination="gg6-Ip-e3x" eventType="touchUpInside" id="nhu-wa-plU"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="z71-7Z-xfT" firstAttribute="leading" secondItem="DMI-a8-SBG" secondAttribute="leadingMargin" id="8o4-Eo-Fuu"/>
-                            <constraint firstAttribute="centerY" secondItem="z71-7Z-xfT" secondAttribute="centerY" id="Fbq-hb-u1N"/>
-                            <constraint firstItem="z71-7Z-xfT" firstAttribute="trailing" secondItem="DMI-a8-SBG" secondAttribute="trailingMargin" id="Iok-8C-WBQ"/>
-                            <constraint firstAttribute="centerX" secondItem="z71-7Z-xfT" secondAttribute="centerX" id="PI3-me-vXi"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="RaaS Plugin View" id="M0R-EG-jf8"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XNh-KL-1vL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-580" y="532"/>
+            <point key="canvasLocation" x="427" y="504"/>
         </scene>
         <!--GSWebBridge-->
         <scene sceneID="JAu-KF-Gab">
@@ -472,7 +432,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C38-Uu-dQj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="119" y="532"/>
+            <point key="canvasLocation" x="-277" y="504"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9si-Jl-0gt">
@@ -508,7 +468,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U6f-8c-CYu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1508" y="-210"/>
+            <point key="canvasLocation" x="1112" y="-238"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2nM-LA-biH">
@@ -526,7 +486,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bGA-QG-xmf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="823" y="-210"/>
+            <point key="canvasLocation" x="427" y="-238"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VxT-fe-n9j">
@@ -544,25 +504,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iL8-Wq-K8t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="119" y="-210"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="IG3-gd-r3U">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rWH-MK-fWT" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mTv-S3-rM6">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="gg6-Ip-e3x" kind="relationship" relationship="rootViewController" id="OHg-nh-XEr"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BLy-UO-hlK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-580" y="-210"/>
+            <point key="canvasLocation" x="-277" y="-238"/>
         </scene>
     </scenes>
 </document>
