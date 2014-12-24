@@ -33,6 +33,7 @@
 		52BCE23F1A49028500924AD8 /* CommentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCE2361A49028500924AD8 /* CommentsViewController.m */; };
 		52BCE2401A49028500924AD8 /* GSWebBridgeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCE2381A49028500924AD8 /* GSWebBridgeController.m */; };
 		52BCE2421A49028500924AD8 /* PublishActionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCE23C1A49028500924AD8 /* PublishActionController.m */; };
+		52BCE2451A4AA85600924AD8 /* G_256.png in Resources */ = {isa = PBXBuildFile; fileRef = 52BCE2441A4AA85600924AD8 /* G_256.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		52BCE2381A49028500924AD8 /* GSWebBridgeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSWebBridgeController.m; sourceTree = "<group>"; };
 		52BCE23B1A49028500924AD8 /* PublishActionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublishActionController.h; sourceTree = "<group>"; };
 		52BCE23C1A49028500924AD8 /* PublishActionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublishActionController.m; sourceTree = "<group>"; };
+		52BCE2441A4AA85600924AD8 /* G_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = G_256.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 		52BCE1DE1A48A65800924AD8 /* Gigya-iOS-Demos */ = {
 			isa = PBXGroup;
 			children = (
+				52BCE2441A4AA85600924AD8 /* G_256.png */,
 				52BCE2351A49028500924AD8 /* CommentsViewController.h */,
 				52BCE2361A49028500924AD8 /* CommentsViewController.m */,
 				52BCE2371A49028500924AD8 /* GSWebBridgeController.h */,
@@ -290,6 +293,7 @@
 				52BCE1EB1A48A65900924AD8 /* Main.storyboard in Resources */,
 				52BCE1F01A48A65900924AD8 /* LaunchScreen.xib in Resources */,
 				52BCE1ED1A48A65900924AD8 /* Images.xcassets in Resources */,
+				52BCE2451A4AA85600924AD8 /* G_256.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
