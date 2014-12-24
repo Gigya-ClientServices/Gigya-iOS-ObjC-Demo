@@ -10,6 +10,8 @@
 
 @interface CommentsViewController ()
 
+@property (weak, nonatomic) IBOutlet UIScrollView *commentsScrollView;
+
 @end
 
 @implementation CommentsViewController

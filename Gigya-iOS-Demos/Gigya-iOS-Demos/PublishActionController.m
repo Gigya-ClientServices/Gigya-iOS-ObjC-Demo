@@ -10,6 +10,8 @@
 
 @interface PublishActionController ()
 
+@property (weak, nonatomic) IBOutlet UITextView *shareText;
+
 @end
 
 @implementation PublishActionController
@@ -22,6 +24,9 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)publishButtonAction:(id)sender {
 }
 
 @end

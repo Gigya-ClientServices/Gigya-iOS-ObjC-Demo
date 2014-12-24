@@ -176,7 +176,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="ybY-AZ-yCb" kind="show" id="nKi-Qg-gBd"/>
+                                    <segue destination="ybY-AZ-yCb" kind="show" id="ioF-zG-AyD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -230,52 +230,76 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVq-UB-8n4">
-                                <rect key="frame" x="16" y="72" width="568" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hb7-TJ-s9Q">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MyD-3V-Gbc">
+                                        <rect key="frame" x="8" y="8" width="584" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="cFd-I6-WNa"/>
+                                        </constraints>
+                                        <size key="titleShadowOffset" width="5" height="5"/>
+                                        <state key="normal" title="Comment Plugin (Popover)"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUICOlor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="showCommentsAsDialog:" destination="Sqy-4m-LKg" eventType="touchUpInside" id="Bba-S7-GKP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCV-b0-qTt">
+                                        <rect key="frame" x="8" y="66" width="584" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Ys1-qs-SXc"/>
+                                        </constraints>
+                                        <size key="titleShadowOffset" width="5" height="5"/>
+                                        <state key="normal" title="Comments Plugin (Sub-view)"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUICOlor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="showCommentsAsSubView:" destination="Sqy-4m-LKg" eventType="touchUpInside" id="Eat-kC-9C8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="9nz-v7-oN9"/>
+                                    <constraint firstItem="MyD-3V-Gbc" firstAttribute="trailing" secondItem="hb7-TJ-s9Q" secondAttribute="trailingMargin" id="1SG-yU-0hD"/>
+                                    <constraint firstItem="MyD-3V-Gbc" firstAttribute="top" secondItem="hb7-TJ-s9Q" secondAttribute="topMargin" id="IsX-Va-w7w"/>
+                                    <constraint firstItem="vCV-b0-qTt" firstAttribute="top" secondItem="MyD-3V-Gbc" secondAttribute="bottom" constant="8" symbolic="YES" id="LWa-WW-QeP"/>
+                                    <constraint firstItem="vCV-b0-qTt" firstAttribute="leading" secondItem="MyD-3V-Gbc" secondAttribute="leading" id="O8V-Gv-PNF"/>
+                                    <constraint firstItem="vCV-b0-qTt" firstAttribute="centerX" secondItem="hb7-TJ-s9Q" secondAttribute="centerX" id="OyS-4j-3kw"/>
+                                    <constraint firstItem="vCV-b0-qTt" firstAttribute="trailing" secondItem="MyD-3V-Gbc" secondAttribute="trailing" id="VKz-y9-7dz"/>
+                                    <constraint firstAttribute="bottom" secondItem="vCV-b0-qTt" secondAttribute="bottom" constant="420" id="X0H-4Y-oUu"/>
+                                    <constraint firstItem="MyD-3V-Gbc" firstAttribute="leading" secondItem="hb7-TJ-s9Q" secondAttribute="leadingMargin" id="yXN-F2-iIb"/>
                                 </constraints>
-                                <state key="normal" title="Show Comments (Pop Over)">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="showCommentsAsDialog:" destination="Sqy-4m-LKg" eventType="touchUpInside" id="5l6-Tr-ZdV"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNV-bS-XbK">
-                                <rect key="frame" x="16" y="130" width="568" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="HGe-8v-nnS"/>
-                                </constraints>
-                                <state key="normal" title="Show Comments (Sub View)">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="showCommentsAsSubView:" destination="Sqy-4m-LKg" eventType="touchUpInside" id="kfV-FZ-kab"/>
-                                </connections>
-                            </button>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="TNV-bS-XbK" firstAttribute="trailing" secondItem="Qa5-l3-veE" secondAttribute="trailingMargin" id="6wQ-g3-vgS"/>
-                            <constraint firstItem="TNV-bS-XbK" firstAttribute="centerY" secondItem="Qa5-l3-veE" secondAttribute="centerY" id="9F5-Y5-Wwp"/>
-                            <constraint firstItem="hVq-UB-8n4" firstAttribute="leading" secondItem="TNV-bS-XbK" secondAttribute="leading" id="APc-Sd-3C5"/>
-                            <constraint firstItem="TNV-bS-XbK" firstAttribute="leading" secondItem="Qa5-l3-veE" secondAttribute="leadingMargin" id="DFM-tn-Lnu"/>
-                            <constraint firstItem="TNV-bS-XbK" firstAttribute="top" secondItem="hVq-UB-8n4" secondAttribute="bottom" constant="29" id="O6E-XE-mb8"/>
-                            <constraint firstItem="hVq-UB-8n4" firstAttribute="trailing" secondItem="TNV-bS-XbK" secondAttribute="trailing" id="P9I-mZ-ADi"/>
-                            <constraint firstItem="hVq-UB-8n4" firstAttribute="top" secondItem="bUJ-Sr-CTe" secondAttribute="bottom" constant="8" id="tqd-Ce-iTA"/>
-                            <constraint firstItem="TNV-bS-XbK" firstAttribute="top" secondItem="hVq-UB-8n4" secondAttribute="bottom" constant="8" id="xQ4-0q-fgu"/>
+                            <constraint firstItem="hb7-TJ-s9Q" firstAttribute="leading" secondItem="Qa5-l3-veE" secondAttribute="leading" id="NiD-Rw-5ai"/>
+                            <constraint firstAttribute="trailing" secondItem="hb7-TJ-s9Q" secondAttribute="trailing" id="eiK-0w-zCR"/>
+                            <constraint firstItem="hb7-TJ-s9Q" firstAttribute="bottom" secondItem="DDB-8Q-kA5" secondAttribute="top" id="wdy-3x-xOg"/>
+                            <constraint firstItem="hb7-TJ-s9Q" firstAttribute="top" secondItem="bUJ-Sr-CTe" secondAttribute="bottom" id="wtc-gX-y8Z"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="9F5-Y5-Wwp"/>
-                                <exclude reference="O6E-XE-mb8"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Comments View" id="yzt-es-m2V"/>
+                    <connections>
+                        <outlet property="commentsScrollView" destination="hb7-TJ-s9Q" id="1Ax-iP-DqW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VRs-1z-hVI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -292,9 +316,91 @@
                     <view key="view" contentMode="scaleToFill" id="tI1-Th-FQC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Npc-ZN-SlM">
+                                <rect key="frame" x="16" y="530" width="568" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="PWd-Gl-7Hk"/>
+                                </constraints>
+                                <size key="titleShadowOffset" width="5" height="5"/>
+                                <state key="normal" title="Publish User Action"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUICOlor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="logoutButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f2S-zZ-pf9"/>
+                                    <action selector="publishButtonAction:" destination="kGF-Y5-bOG" eventType="touchUpInside" id="pgu-Rk-mH5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Text to Publish" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1q-3O-UrQ">
+                                <rect key="frame" x="16" y="72" width="158" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fB3-bq-OtA">
+                                <rect key="frame" x="16" y="101" width="562" height="199"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="199" id="fhh-wg-1sX"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUICOlor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQL-dB-kE7">
+                                <rect key="frame" x="16" y="308" width="562" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="8i5-MO-E06"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">This will publish to the currently connected social network, if it's supported. If you are not currently connected to a social network, then this will fail with an error. </string>
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Npc-ZN-SlM" firstAttribute="trailing" secondItem="xQL-dB-kE7" secondAttribute="trailing" id="1gd-de-IyF"/>
+                            <constraint firstItem="Npc-ZN-SlM" firstAttribute="trailing" secondItem="tI1-Th-FQC" secondAttribute="trailingMargin" id="95P-WC-AyM"/>
+                            <constraint firstItem="xQL-dB-kE7" firstAttribute="leading" secondItem="fB3-bq-OtA" secondAttribute="leading" id="A0Q-uG-xzs"/>
+                            <constraint firstItem="fB3-bq-OtA" firstAttribute="top" secondItem="M1q-3O-UrQ" secondAttribute="bottom" constant="8" symbolic="YES" id="EkG-Bp-WQ2"/>
+                            <constraint firstAttribute="bottom" secondItem="Npc-ZN-SlM" secondAttribute="bottom" constant="20" symbolic="YES" id="Hd1-bF-XWh"/>
+                            <constraint firstItem="xQL-dB-kE7" firstAttribute="leading" secondItem="Npc-ZN-SlM" secondAttribute="leading" id="Xd0-xb-6Ty"/>
+                            <constraint firstItem="xQL-dB-kE7" firstAttribute="top" secondItem="fB3-bq-OtA" secondAttribute="bottom" constant="8" symbolic="YES" id="ZDA-Rp-rno"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fB3-bq-OtA" secondAttribute="trailing" constant="6" id="Zhk-1m-cBj"/>
+                            <constraint firstItem="M1q-3O-UrQ" firstAttribute="leading" secondItem="fB3-bq-OtA" secondAttribute="leading" id="n00-Gt-TYV"/>
+                            <constraint firstItem="Npc-ZN-SlM" firstAttribute="leading" secondItem="tI1-Th-FQC" secondAttribute="leadingMargin" id="oW0-am-drw"/>
+                            <constraint firstItem="M1q-3O-UrQ" firstAttribute="top" secondItem="GHb-AK-Y6M" secondAttribute="bottom" constant="8" symbolic="YES" id="zbc-Y1-9OZ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Publish User Action" id="uXI-9o-f51"/>
+                    <connections>
+                        <outlet property="shareText" destination="fB3-bq-OtA" id="EkR-sQ-nbQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4cd-PA-9nE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -351,9 +457,18 @@
                     <view key="view" contentMode="scaleToFill" id="82T-Pw-Bu5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eTf-HM-3z2">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="GSWebBridge" id="hAj-hJ-K2W"/>
+                    <connections>
+                        <outlet property="webBridgeWebView" destination="eTf-HM-3z2" id="qpt-nR-rCd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C38-Uu-dQj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
