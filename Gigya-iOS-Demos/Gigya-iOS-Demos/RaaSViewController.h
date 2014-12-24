@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <GigyaSDK/Gigya.h>
 
-@interface RaaSViewController : UIViewController <GSPluginViewDelegate>
+@interface RaaSViewController : UIViewController
 
 - (IBAction)showScreenSet:(id)sender;
 

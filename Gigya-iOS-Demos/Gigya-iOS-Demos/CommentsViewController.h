@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GigyaSDK/Gigya.h>
 
-@interface CommentsViewController : UIViewController
+@interface CommentsViewController : UIViewController  <GSPluginViewDelegate>
 
 
 @end
