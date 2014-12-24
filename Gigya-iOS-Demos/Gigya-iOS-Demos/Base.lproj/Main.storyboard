@@ -310,8 +310,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQL-dB-kE7">
-                                <rect key="frame" x="16" y="308" width="568" height="47"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQL-dB-kE7">
+                                <rect key="frame" x="16" y="308" width="562" height="110"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="8i5-MO-E06"/>
                                 </constraints>
@@ -404,21 +404,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l8y-s6-KyD">
+                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eTf-HM-3z2">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
-                            </scrollView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="l8y-s6-KyD" firstAttribute="leading" secondItem="82T-Pw-Bu5" secondAttribute="leading" id="Bb9-Qu-MEh"/>
-                            <constraint firstItem="l8y-s6-KyD" firstAttribute="top" secondItem="cgM-k1-kAU" secondAttribute="bottom" id="DOC-43-YGT"/>
-                            <constraint firstAttribute="trailing" secondItem="l8y-s6-KyD" secondAttribute="trailing" id="VDt-eb-aid"/>
-                            <constraint firstItem="l8y-s6-KyD" firstAttribute="bottom" secondItem="7Lm-w5-JMV" secondAttribute="top" id="pIx-Rt-SHW"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="GSWebBridge" id="hAj-hJ-K2W"/>
                     <connections>
-                        <outlet property="webBridgeScrollView" destination="l8y-s6-KyD" id="mUT-2o-YhY"/>
+                        <outlet property="webBridgeWebView" destination="eTf-HM-3z2" id="qpt-nR-rCd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C38-Uu-dQj" userLabel="First Responder" sceneMemberID="firstResponder"/>
