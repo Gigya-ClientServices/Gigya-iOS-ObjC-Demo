@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  Gigya-iOS-Demos
 //
-//  Created by Jay Reardon on 12/22/14.
+//  Created by Jay Reardon & Giovanni Alvarez on 12/22/14.
 //  Copyright (c) 2014 Gigya. All rights reserved.
 //
 
@@ -11,8 +11,7 @@
 #import <GigyaSDK/Gigya.h>
 
 
-
-@interface AppDelegate ()
+@interface AppDelegate () <GSAccountsDelegate>
 
 @end
 
@@ -24,7 +23,23 @@ static NSString * const kClientId = @"224059159380-llqo0j946bbl3s4rqu35kkolpmhpl
     // Override point for customization after application launch.
     [Gigya initWithAPIKey:@"3_hoQxVv5W44L7c5fhBbaDFi9gOaaa2ZpbrBXlmlJoWISEk4D5J47X2iRnWwKnWyMW"];
     
+    [Gigya setAccountsDelegate:self];
+    
     return YES;
+}
+
+- (void)accountDidLogin:(GSAccount *)account {
+    
+}
+
+- (void)accountDidLogout {
+    UIAlertView *alert;
+    alert = [[UIAlertView alloc] initWithTitle:@"Gigya Logout"
+                                       message:@"You have successfully logged out of Gigya."
+                                      delegate:nil
+                             cancelButtonTitle:@"OK"
+                             otherButtonTitles:nil];
+    [alert show];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
