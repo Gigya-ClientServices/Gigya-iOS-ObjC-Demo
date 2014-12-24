@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="afW-Bl-Wwh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="afW-Bl-Wwh">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -56,7 +56,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="Ae1-m6-vHy" kind="show" id="ego-QD-dVs"/>
+                                    <action selector="nativeLoginButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NW0-vr-In1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIY-y3-a1a">
@@ -119,7 +119,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="HXB-un-10o" kind="show" id="j7z-Kl-KQz"/>
+                                    <action selector="mobileSessionCheckButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XHY-zK-mnf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RgW-b8-FYn">
@@ -235,7 +235,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VRs-1z-hVI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2144" y="532"/>
+            <point key="canvasLocation" x="1508" y="532"/>
         </scene>
         <!--Publish User Action-->
         <scene sceneID="Vq8-KE-SBQ">
@@ -254,7 +254,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4cd-PA-9nE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1459" y="532"/>
+            <point key="canvasLocation" x="823" y="532"/>
         </scene>
         <!--RaaS Plugin View-->
         <scene sceneID="988-nr-6PJ">
@@ -296,25 +296,6 @@
             </objects>
             <point key="canvasLocation" x="-580" y="532"/>
         </scene>
-        <!--Mobile Session Check-->
-        <scene sceneID="VkY-Ud-tJ9">
-            <objects>
-                <viewController id="B6t-i5-4hH" customClass="SessionCheckController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="kAw-op-1lf"/>
-                        <viewControllerLayoutGuide type="bottom" id="sam-UT-mfZ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="lfF-ed-iCY">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Mobile Session Check" id="l8i-zp-cUD"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SUj-IY-YF9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="85" y="532"/>
-        </scene>
         <!--GSWebBridge-->
         <scene sceneID="JAu-KF-Gab">
             <objects>
@@ -332,26 +313,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C38-Uu-dQj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="755" y="532"/>
-        </scene>
-        <!--Native Social Login-->
-        <scene sceneID="9M7-pD-i4b">
-            <objects>
-                <viewController id="MUc-jc-EiL" customClass="NativeLoginController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="WEm-M5-EGA"/>
-                        <viewControllerLayoutGuide type="bottom" id="QCf-vB-Qhy"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="OFA-NM-Ncc">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Native Social Login" id="Ywv-9A-NhX"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e46-rE-csH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1286" y="532"/>
+            <point key="canvasLocation" x="119" y="532"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9si-Jl-0gt">
@@ -387,7 +349,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U6f-8c-CYu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2144" y="-210"/>
+            <point key="canvasLocation" x="1508" y="-210"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2nM-LA-biH">
@@ -405,7 +367,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bGA-QG-xmf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1459" y="-210"/>
+            <point key="canvasLocation" x="823" y="-210"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VxT-fe-n9j">
@@ -423,25 +385,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iL8-Wq-K8t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="755" y="-210"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="qGt-ee-DBW">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HXB-un-10o" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fl9-ea-N8g">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="B6t-i5-4hH" kind="relationship" relationship="rootViewController" id="6IV-nt-hxd"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YYQ-Se-pNj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="85" y="-210"/>
+            <point key="canvasLocation" x="119" y="-210"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IG3-gd-r3U">
@@ -460,24 +404,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BLy-UO-hlK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-580" y="-210"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="SkO-vK-MFq">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ae1-m6-vHy" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EnY-wc-rtn">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="MUc-jc-EiL" kind="relationship" relationship="rootViewController" id="Bzg-2u-uas"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bTr-Wq-0YP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1286" y="-210"/>
         </scene>
     </scenes>
 </document>

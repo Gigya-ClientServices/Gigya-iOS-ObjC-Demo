@@ -32,9 +32,7 @@
 		52BCE2341A49007700924AD8 /* RaaSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCE2331A49007700924AD8 /* RaaSViewController.m */; };
 		52BCE23F1A49028500924AD8 /* CommentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCE2361A49028500924AD8 /* CommentsViewController.m */; };
 		52BCE2401A49028500924AD8 /* GSWebBridgeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCE2381A49028500924AD8 /* GSWebBridgeController.m */; };
-		52BCE2411A49028500924AD8 /* NativeLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCE23A1A49028500924AD8 /* NativeLoginController.m */; };
 		52BCE2421A49028500924AD8 /* PublishActionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCE23C1A49028500924AD8 /* PublishActionController.m */; };
-		52BCE2431A49028500924AD8 /* SessionCheckController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCE23E1A49028500924AD8 /* SessionCheckController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,12 +80,8 @@
 		52BCE2361A49028500924AD8 /* CommentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentsViewController.m; sourceTree = "<group>"; };
 		52BCE2371A49028500924AD8 /* GSWebBridgeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSWebBridgeController.h; sourceTree = "<group>"; };
 		52BCE2381A49028500924AD8 /* GSWebBridgeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSWebBridgeController.m; sourceTree = "<group>"; };
-		52BCE2391A49028500924AD8 /* NativeLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeLoginController.h; sourceTree = "<group>"; };
-		52BCE23A1A49028500924AD8 /* NativeLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeLoginController.m; sourceTree = "<group>"; };
 		52BCE23B1A49028500924AD8 /* PublishActionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublishActionController.h; sourceTree = "<group>"; };
 		52BCE23C1A49028500924AD8 /* PublishActionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublishActionController.m; sourceTree = "<group>"; };
-		52BCE23D1A49028500924AD8 /* SessionCheckController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionCheckController.h; sourceTree = "<group>"; };
-		52BCE23E1A49028500924AD8 /* SessionCheckController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionCheckController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,12 +142,8 @@
 				52BCE2361A49028500924AD8 /* CommentsViewController.m */,
 				52BCE2371A49028500924AD8 /* GSWebBridgeController.h */,
 				52BCE2381A49028500924AD8 /* GSWebBridgeController.m */,
-				52BCE2391A49028500924AD8 /* NativeLoginController.h */,
-				52BCE23A1A49028500924AD8 /* NativeLoginController.m */,
 				52BCE23B1A49028500924AD8 /* PublishActionController.h */,
 				52BCE23C1A49028500924AD8 /* PublishActionController.m */,
-				52BCE23D1A49028500924AD8 /* SessionCheckController.h */,
-				52BCE23E1A49028500924AD8 /* SessionCheckController.m */,
 				52BCE2321A48FE8D00924AD8 /* RaaSViewController.h */,
 				52BCE2331A49007700924AD8 /* RaaSViewController.m */,
 				52BCE1E31A48A65800924AD8 /* AppDelegate.h */,
@@ -321,9 +311,7 @@
 				52BCE2401A49028500924AD8 /* GSWebBridgeController.m in Sources */,
 				52BCE2341A49007700924AD8 /* RaaSViewController.m in Sources */,
 				52BCE1E51A48A65800924AD8 /* AppDelegate.m in Sources */,
-				52BCE2411A49028500924AD8 /* NativeLoginController.m in Sources */,
 				52BCE2421A49028500924AD8 /* PublishActionController.m in Sources */,
-				52BCE2431A49028500924AD8 /* SessionCheckController.m in Sources */,
 				52BCE23F1A49028500924AD8 /* CommentsViewController.m in Sources */,
 				52BCE1E21A48A65800924AD8 /* main.m in Sources */,
 			);
