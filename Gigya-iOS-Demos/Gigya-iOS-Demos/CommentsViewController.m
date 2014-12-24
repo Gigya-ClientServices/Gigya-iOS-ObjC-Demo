@@ -7,8 +7,9 @@
 //
 
 #import "CommentsViewController.h"
+#import <GigyaSDK/Gigya.h>
 
-@interface CommentsViewController ()
+@interface CommentsViewController () <GSPluginViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *commentsScrollView;
 

@@ -7,10 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <GigyaSDK/Gigya.h>
 
 @interface RaaSViewController : UIViewController
-
-- (IBAction)showScreenSet:(id)sender;
 
 @end

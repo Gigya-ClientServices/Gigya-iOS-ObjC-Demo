@@ -7,8 +7,10 @@
 //
 
 #import "RaaSViewController.h"
+#import <GigyaSDK/Gigya.h>
 
 @interface RaaSViewController ()
+- (IBAction)showScreenSet:(id)sender;
 
 @end
 
