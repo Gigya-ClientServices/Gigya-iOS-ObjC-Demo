@@ -103,13 +103,28 @@
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     [params setObject:@"DefaultMobile-RegistrationLogin" forKey:@"screenSet"];
     [Gigya showPluginDialogOver:self plugin:@"accounts.screenSet" parameters:params completionHandler:^(BOOL closedByUser, NSError *error) {
-        if (!error) {
+            if (!error) {
             // Login was successful
-        }
-        else {
+            }
+            else {
             // Handle error
+            }
         }
-    }];
+        delegate:self
+    ];
 }
+
+- (void)pluginView:(GSPluginView *)pluginView finishedLoadingPluginWithEvent:(NSDictionary *)event {
+    NSLog(@"Finished Loading Plugin with event: %@", event);
+}
+
+- (void)pluginView:(GSPluginView *)pluginView firedEvent:(NSDictionary *)event {
+    NSLog(@"Finished Loading Plugin with event: %@", event);
+}
+
+- (void)pluginView:(GSPluginView *)pluginView didFailWithError:(NSError *)error {
+    NSLog(@"Plugin View failed with error: %@", error);
+}
+
 
 @end
