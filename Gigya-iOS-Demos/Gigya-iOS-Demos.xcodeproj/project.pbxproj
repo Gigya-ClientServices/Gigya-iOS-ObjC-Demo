@@ -254,6 +254,7 @@
 				TargetAttributes = {
 					52BCE1DB1A48A65800924AD8 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = PWUZYLM9DQ;
 					};
 					52BCE1F41A48A65900924AD8 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -435,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/jayreardon/repos/Gigya-SDKs/iOS",
@@ -453,6 +455,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/jayreardon/repos/Gigya-SDKs/iOS",
