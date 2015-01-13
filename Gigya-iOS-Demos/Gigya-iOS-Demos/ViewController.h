@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <GigyaSDK/Gigya.h>
 
-@interface ViewController : UIViewController <GSPluginViewDelegate>
+@interface ViewController : UIViewController <GSPluginViewDelegate, GSAccountsDelegate>
 
 @end
 
