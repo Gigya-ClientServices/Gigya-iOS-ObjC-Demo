@@ -38,6 +38,25 @@
                                  otherButtonTitles:nil];
         [alert show];
     } else {
+        if ([[[Gigya session] lastLoginProvider] isEqual: @"facebook"]) {
+            [Gigya requestNewFacebookPublishPermissions:@"publish_actions"
+                                        responseHandler:^(BOOL granted, NSError *error, NSArray *declinedPermissions) {
+                                            if (!granted) {
+                                                UIAlertView *alert;
+                                                // Handle error
+                                                alert = [[UIAlertView alloc] initWithTitle:@"Gigya Publish User Action"
+                                                                                   message:error.description
+                                                                                  delegate:nil
+                                                                         cancelButtonTitle:@"OK"
+                                                                         otherButtonTitles:nil
+                                                         ];
+                                                [alert show];
+                                                return;
+                                            }
+                                        }
+             ];
+        }
+        
         NSMutableDictionary *userAction = [NSMutableDictionary dictionary];
         [userAction setObject:@"Gigya iOS SDK Demos" forKey:@"title"];
         [userAction setObject:self.shareText.text forKey:@"description"];

@@ -10,10 +10,11 @@
 #import <GigyaSDK/Gigya.h>
 
 @interface ViewController ()
-
+@property GSAccount *user;
 @end
 
-@implementation ViewController
+@implementation ViewController 
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -27,6 +28,7 @@
 
 - (IBAction)logoutButtonAction:(id)sender {
     [Gigya logoutWithCompletionHandler:^(GSResponse *response, NSError *error) {
+        self.user = nil;
         if (error) {
             UIAlertView *alert;
             alert = [[UIAlertView alloc] initWithTitle:@"Gigya Logout"
@@ -57,10 +59,27 @@
                                            ];
                                   [alert show];
                               }
+                              else {
+                                  // Anything?
+                              }
                           }
          ];
     } else {
         UIAlertView *alert;
+        if (!self.user) {
+            // Make Request to get User if it's empty.
+            // Step 1 - Create the request and set the parameters
+            GSRequest *request = [GSRequest requestForMethod:@"accounts.getAccountInfo"];
+            [request sendWithResponseHandler:^(GSResponse *response, NSError *error) {
+                if (!error) {
+                    self.user = (GSAccount *)response;
+                }
+                else {
+                    NSLog(@"Got error on getAccountInfo: %@", error);
+                }
+            }];
+        }
+        
         alert = [[UIAlertView alloc] initWithTitle:@"Alert"
                                            message:@"You are already logged in!"
                                           delegate:nil
@@ -84,6 +103,7 @@
         GSRequest *request = [GSRequest requestForMethod:@"accounts.getAccountInfo"];
         [request sendWithResponseHandler:^(GSResponse *response, NSError *error) {
             if (!error) {
+                self.user = (GSAccount *)response;
                 UIAlertView *alert;
                 alert = [[UIAlertView alloc] initWithTitle:@"Gigya Session Test"
                                                    message:[@"User is logged in\n" stringByAppendingFormat: @"%@ %@ (%@)", response[@"profile"][@"firstName"], response[@"profile"][@"lastName"], response[@"profile"][@"email"]]
@@ -93,23 +113,47 @@
                 [alert show];
             }
             else {
-                NSLog(@"Got error on getUserInfo: %@", error);
+                NSLog(@"Got error on getAccountInfo: %@", error);
             }
         }];
     }
 }
 
+
 - (IBAction)showScreenSet:(id)sender {
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     [params setObject:@"DefaultMobile-RegistrationLogin" forKey:@"screenSet"];
     [Gigya showPluginDialogOver:self plugin:@"accounts.screenSet" parameters:params completionHandler:^(BOOL closedByUser, NSError *error) {
-        if (!error) {
+            if (!error) {
             // Login was successful
-        }
-        else {
+            }
+            else {
             // Handle error
+            }
         }
-    }];
+        delegate:self
+    ];
 }
+
+- (void)pluginView:(GSPluginView *)pluginView finishedLoadingPluginWithEvent:(NSDictionary *)event {
+    NSLog(@"Finished Loading Plugin with event: %@", event);
+}
+
+- (void)pluginView:(GSPluginView *)pluginView firedEvent:(NSDictionary *)event {
+    NSLog(@"Finished Loading Plugin with event: %@", event);
+}
+
+- (void)pluginView:(GSPluginView *)pluginView didFailWithError:(NSError *)error {
+    NSLog(@"Plugin View failed with error: %@", error);
+}
+
+- (void)accountDidLogin:(GSAccount *)account {
+    self.user = account;
+}
+
+- (void)accountDidLogout {
+    self.user = nil;
+}
+
 
 @end

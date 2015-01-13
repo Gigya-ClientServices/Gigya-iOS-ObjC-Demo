@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GigyaSDK/Gigya.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <GSPluginViewDelegate, GSAccountsDelegate>
 
 @end
 
