@@ -1,11 +1,3 @@
-//
-//  GSSession.h
-//  GigyaSDK
-//
-//  Created by Ran Dahan on 6/17/13.
-//  Copyright (c) 2013 Gigya. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
 
 /**

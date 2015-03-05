@@ -1,11 +1,3 @@
-//
-//  GSAccountsDelegate.h
-//  GigyaSDK
-//
-//  Created by Ran on 1/14/14.
-//  Copyright (c) 2014 Gigya. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
 
 /**

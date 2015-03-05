@@ -1,11 +1,3 @@
-//
-//  GigyaSDK.h
-//  GigyaSDK
-//
-//  Created by Ran Dahan on 6/17/13.
-//  Copyright (c) 2013 Gigya. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
@@ -32,15 +24,15 @@
 #import <GooglePlus/GooglePlus.h>
 #import <GoogleOpenSource/GoogleOpenSource.h>
 #endif
-#if __has_include(<Twitter/Twitter.h>)
-#import <Twitter/Twitter.h>
+#if __has_include(<Social/Social.h>) && __has_include(<Accounts/Accounts.h>)
+#import <Social/Social.h>
 #import <Accounts/Accounts.h>
 #endif
 
 #endif
 
 // Consts
-static NSString * const GSGigyaSDKVersion = @"iOS_3.0.7";
+static NSString * const GSGigyaSDKVersion = @"iOS_3.1";
 static NSString * const GSDefaultAPIDomain = @"us1.gigya.com";
 static NSString * const GSGigyaSDKDomain = @"com.gigya.GigyaSDK";
 static NSString * const GSInvalidOperationException = @"com.gigya.GigyaSDK:InvalidOperationException";
@@ -85,7 +77,10 @@ typedef NS_ENUM(NSInteger, GSErrorCode) {
 	GSErrorNetworkFailure = 500026,
 
     /** Failure to load socialize.js in GSPluginView. */
-    GSErrorLoadFailed = 500032
+    GSErrorLoadFailed = 500032,
+    
+    /** Javascript error while loading plugin. Please make sure the plugin name is correct. */
+    GSErrorJSException = 405001
 };
 
 // Block definitions
@@ -205,6 +200,8 @@ typedef void(^GSPluginCompletionHandler)(BOOL closedByUser, NSError *error);
  | sessionExpiration          | NSNumber    | A time interval that defines the time in seconds that Gigya should keep the login session valid for the user. If this parameter is not specified, the session will be valid forever. |
  | forceAuthentication        | NSNumber    | A Boolean value indicating whether the user will be forced to provide his social network credentials during login, even if he is already connected to the social network. Default is `NO` |
  | temporaryAccount           | NSNumber    | A Boolean value indicating whether the account is temporary and is only accessible with the associated access token. This means that it is not possible to access the same account, and get the same Gigya UID again by using login. Default is `NO`. |
+ | loginMode                  | NSString    | (optional) - The type of login being performed<ul><li>standard - (default) the user is logging into an existing account.</li><li>link - the user is linking a social network to an existing account. The account being used to login will become the primary account. When passing loginMode='link', regToken must also be passed to identify the account being linked. This is obtained from the initial login call response.</li><li>reAuth - the user is proving ownership of an existing account by logging into it. The loginID will be ignored and the password verified.</li></ul> |
+ | regToken                   | NSString    | (optional) This parameter is required for completing the link accounts flow. Once the initial login has failed, call the login method with loginMode=link and the regToken returned from the initial call to complete the linking. For more information go to the [social account linking guide](http://developers.gigya.com/010_Developer_Guide/50_Guides/RaaS_Guides/Linking_Social_Accounts). |
  
  @param handler A completion handler that will be invoked when the login process is finished. The handler should have the signature `(GSUser *user, NSError *error)`. If the login was successful, the `error` parameter will be `nil`. Otherwise, you can check the `error.code` (see `GSErrorCode`) or `error.userInfo` to learn why it failed.
  */
@@ -236,6 +233,8 @@ typedef void(^GSPluginCompletionHandler)(BOOL closedByUser, NSError *error);
  | sessionExpiration          | NSNumber    | A time interval that defines the time in seconds that Gigya should keep the login session valid for the user. If this parameter is not specified, the session will be valid forever. |
  | forceAuthentication        | NSNumber    | A Boolean value indicating whether the user will be forced to provide his social network credentials during login, even if he is already connected to the social network. Default is `NO` |
  | temporaryAccount           | NSNumber    | A Boolean value indicating whether the account is temporary and is only accessible with the associated access token. This means that it is not possible to access the same account, and get the same Gigya UID again by using login. Default is `NO`. |
+ | loginMode                  | NSString    | (optional) - The type of login being performed<ul><li>standard - (default) the user is logging into an existing account.</li><li>link - the user is linking a social network to an existing account. The account being used to login will become the primary account. When passing loginMode='link', regToken must also be passed to identify the account being linked. This is obtained from the initial login call response.</li><li>reAuth - the user is proving ownership of an existing account by logging into it. The loginID will be ignored and the password verified.</li></ul> |
+ | regToken                   | NSString    | (optional) This parameter is required for completing the link accounts flow. Once the initial login has failed, call the login method with loginMode=link and the regToken returned from the initial call to complete the linking. For more information go to the [social account linking guide](http://developers.gigya.com/010_Developer_Guide/50_Guides/RaaS_Guides/Linking_Social_Accounts). |
  
  @param viewController A view controller on which to display the login dialog (used only if the `GigyaLoginDontLeaveApp` setting is enabled).
  @param handler A completion handler that will be invoked when the login process is finished. The handler should have the signature `(GSUser *user, NSError *error)`. If the login was successful, the `error` parameter will be `nil`. Otherwise, you can check the `error.code` (see `GSErrorCode`) or `error.userInfo` to learn why it failed.
@@ -290,6 +289,8 @@ typedef void(^GSPluginCompletionHandler)(BOOL closedByUser, NSError *error);
  | sessionExpiration          | NSNumber    | A time interval that defines the time in seconds that Gigya should keep the login session valid for the user. If this parameter is not specified, the session will be valid forever. |
  | forceAuthentication        | NSNumber    | A Boolean value indicating whether the user will be forced to provide his social network credentials during login, even if he is already connected to the social network. Default is `NO` |
  | temporaryAccount           | NSNumber    | A Boolean value indicating whether the account is temporary and is only accessible with the associated access token. This means that it is not possible to access the same account, and get the same Gigya UID again by using login. Default is `NO`. |
+ | loginMode                  | NSString    | (optional) - The type of login being performed<ul><li>standard - (default) the user is logging into an existing account.</li><li>link - the user is linking a social network to an existing account. The account being used to login will become the primary account. When passing loginMode='link', regToken must also be passed to identify the account being linked. This is obtained from the initial login call response.</li><li>reAuth - the user is proving ownership of an existing account by logging into it. The loginID will be ignored and the password verified.</li></ul> |
+ | regToken                   | NSString    | (optional) This parameter is required for completing the link accounts flow. Once the initial login has failed, call the login method with loginMode=link and the regToken returned from the initial call to complete the linking. For more information go to the [social account linking guide](http://developers.gigya.com/010_Developer_Guide/50_Guides/RaaS_Guides/Linking_Social_Accounts). |
  
  @param handler A completion handler that will be invoked when the login process is finished. The handler should have the signature `(GSUser *user, NSError *error)`. If the login was successful, the `error` parameter will be `nil`. Otherwise, you can check the `error.code` (see `GSErrorCode`) or `error.userInfo` to learn why it failed.
  */
@@ -323,6 +324,8 @@ typedef void(^GSPluginCompletionHandler)(BOOL closedByUser, NSError *error);
  | sessionExpiration          | NSNumber    | A time interval that defines the time in seconds that Gigya should keep the login session valid for the user. If this parameter is not specified, the session will be valid forever. |
  | forceAuthentication        | NSNumber    | A Boolean value indicating whether the user will be forced to provide his social network credentials during login, even if he is already connected to the social network. Default is `NO` |
  | temporaryAccount           | NSNumber    | A Boolean value indicating whether the account is temporary and is only accessible with the associated access token. This means that it is not possible to access the same account, and get the same Gigya UID again by using login. Default is `NO`. |
+ | loginMode                  | NSString    | (optional) - The type of login being performed<ul><li>standard - (default) the user is logging into an existing account.</li><li>link - the user is linking a social network to an existing account. The account being used to login will become the primary account. When passing loginMode='link', regToken must also be passed to identify the account being linked. This is obtained from the initial login call response.</li><li>reAuth - the user is proving ownership of an existing account by logging into it. The loginID will be ignored and the password verified.</li></ul> |
+ | regToken                   | NSString    | (optional) This parameter is required for completing the link accounts flow. Once the initial login has failed, call the login method with loginMode=link and the regToken returned from the initial call to complete the linking. For more information go to the [social account linking guide](http://developers.gigya.com/010_Developer_Guide/50_Guides/RaaS_Guides/Linking_Social_Accounts). |
  
  @param handler A completion handler that will be invoked when the login process is finished. The handler should have the signature `(GSUser *user, NSError *error)`. If the login was successful, the `error` parameter will be `nil`. Otherwise, you can check the `error.code` (see `GSErrorCode`) or `error.userInfo` to learn why it failed.
  */
@@ -623,6 +626,16 @@ typedef void(^GSPluginCompletionHandler)(BOOL closedByUser, NSError *error);
  Controls whether status bar network activity indicator will be shown upon sending `GSRequest`s. The default is `YES`.
  */
 + (void)setNetworkActivityIndicatorEnabled:(BOOL)networkActivityIndicatorEnabled;
+
+/*!
+ Retrieves the time in seconds before a request times out.
+ */
++ (NSTimeInterval)requestTimeout;
+
+/*!
+ Controls the time in seconds before a request times out. The default is 30 seconds.
+ */
++ (void)setRequestTimeout:(NSTimeInterval)requestTimeout;
 
 @end
 
