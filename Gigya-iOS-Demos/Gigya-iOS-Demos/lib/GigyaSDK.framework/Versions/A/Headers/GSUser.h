@@ -1,11 +1,3 @@
-//
-//  GSUser.h
-//  GigyaSDK
-//
-//  Created by Ran Dahan on 7/11/13.
-//  Copyright (c) 2013 Gigya. All rights reserved.
-//
-
 #import "GSResponse.h"
 
 /**

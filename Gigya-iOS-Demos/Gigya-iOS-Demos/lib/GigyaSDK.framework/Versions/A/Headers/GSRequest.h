@@ -1,11 +1,3 @@
-//
-//  GSRequest.h
-//  GigyaSDK
-//
-//  Created by Ran Dahan on 6/17/13.
-//  Copyright (c) 2013 Gigya. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
 #import "GSResponse.h"
 #import "GSSession.h"
@@ -63,6 +55,10 @@ typedef void(^GSResponseHandler)(GSResponse *response, NSError *error);
  Indicates whether HTTPS should be used. The default is `YES`. Overrides the global setting in [Gigya].
  */
 @property (nonatomic) BOOL useHTTPS;
+/*!
+ Indicates the time in seconds before a request times out. Overrides the global setting in [Gigya].
+ */
+@property (nonatomic) NSTimeInterval requestTimeout;
 
 
 /** @name Sending a Request */

@@ -1,11 +1,3 @@
-//
-//  GSLoginDelegate.h
-//  GigyaSDK
-//
-//  Created by Ran Dahan on 7/10/13.
-//  Copyright (c) 2013 Gigya. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
 
 /**

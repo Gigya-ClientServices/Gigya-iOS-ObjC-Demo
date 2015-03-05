@@ -1,11 +1,3 @@
-//
-//  GSPluginView.h
-//  GigyaSDK
-//
-//  Created by Ran on 12/5/13.
-//  Copyright (c) 2013 Gigya. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 #import "Gigya.h"
 

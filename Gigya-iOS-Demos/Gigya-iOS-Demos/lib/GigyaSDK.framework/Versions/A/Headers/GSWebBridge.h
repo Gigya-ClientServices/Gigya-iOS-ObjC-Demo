@@ -1,11 +1,3 @@
-//
-//  GSWebBridge.h
-//  GigyaSDK
-//
-//  Created by Ran on 12/5/13.
-//  Copyright (c) 2013 Gigya. All rights reserved.
-//
-
 #import "Gigya.h"
 
 @class GSWebBridge;
@@ -41,6 +33,15 @@
  @param containerID The ID of the HTML element that contains the plugin.
  */
 - (void)webView:(UIWebView *)webView receivedPluginEvent:(NSDictionary *)event fromPluginInContainer:(NSString *)containerID;
+
+/**
+ Invoked when a Gigya JavaScript SDK writes to log
+ 
+ @param webView A registered web view that contains the log entry.
+ @param logType The log entry type. possible values: debug, info, warn, error.
+ @param logInfo The log entry info object. possible values: debug, info, warn, error.
+ */
+- (void)webView:(UIWebView *)webView receivedJsLog:(NSString *)logType logInfo:(NSDictionary *)logInfo;
 
 @end
 
@@ -84,6 +85,16 @@
  @see GSWebBridgeDelegate
  */
 + (void)registerWebView:(UIWebView *)webView delegate:(id<GSWebBridgeDelegate>)delegate;
+
+/**
+ Registers a web view to the web bridge. This method should be called before calling `UIWebView`'s `loadRequest:`.
+ 
+ @param webView A web view.
+ @param delegate A delegate to be notified with `GSWebBridge` events.
+ @param settings A settings object that will be passed to the Javascript SDK.
+ @see GSWebBridgeDelegate
+ */
++ (void)registerWebView:(UIWebView *)webView delegate:(id<GSWebBridgeDelegate>)delegate settings:(NSDictionary *)settings;
 
 /**
  Unregisters a web view from the web bridge. This method must be called before the web view has been deallocated.
