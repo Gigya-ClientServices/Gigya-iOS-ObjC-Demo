@@ -24,7 +24,7 @@
 @class FBAppCall;
 
 /*!
- @typedef FBAppCallHandler
+ @typedef FBAppCallgitdler
 
  @abstract
  A block that is passed to performAppCall to register for a callback with the results
