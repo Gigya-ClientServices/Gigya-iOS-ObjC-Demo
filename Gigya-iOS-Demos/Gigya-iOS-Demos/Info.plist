@@ -48,7 +48,7 @@
 	<key>FacebookDisplayName</key>
 	<string>Gigy­a­-­M­o­b­i­l­e­-­Demos</string>
 	<key>GigyaLoginDontLeaveApp</key>
-	<false/>
+	<true/>
 	<key>GooglePlusClientID</key>
 	<string>224059159380-llqo0j946bbl3s4rqu35kkolpmhpl07h.apps.googleusercontent.com</string>
 	<key>LSRequiresIPhoneOS</key>
