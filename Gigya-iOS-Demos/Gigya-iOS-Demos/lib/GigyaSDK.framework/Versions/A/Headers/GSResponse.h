@@ -20,7 +20,7 @@
 /*!
  The API method name.
  */
-@property (readonly) NSString *method;
+@property (weak, readonly) NSString *method;
 
 /*!
  The result code of the operation. Value of 0 indicates success, any other number indicates failure. For a complete list of error codes, see the [Error Codes table](http://developers.gigya.com/030_API_reference/030_Response_Codes_and_Errors).
@@ -30,7 +30,7 @@
 /*!
  Unique identifier of the transaction, for debugging purposes.
  */
-@property (readonly) NSString *callId;
+@property (weak, readonly) NSString *callId;
 
 /** @name Accessing Keys and Values */
 
@@ -44,7 +44,7 @@
 /*!
  Returns the value associated with the given key.
  
- @returns The key for which to return the value.
+ @param key The key for which to return the value.
  */
 - (id)objectForKey:(NSString *)key;
 
@@ -52,6 +52,8 @@
  Returns the value associated with the given key.
  
  This method is the same as <objectForKey:>, but is required for subscripting syntax.
+ 
+ @param key The key for which to return the value.
  */
 - (id)objectForKeyedSubscript:(NSString *)key;
 

@@ -64,7 +64,7 @@
  
  @see GSPluginViewDelegate
  */
-@property (nonatomic, assign) id<GSPluginViewDelegate> delegate;
+@property (nonatomic, weak) id<GSPluginViewDelegate> delegate;
 
 /** @name Loading a Plugin */
 

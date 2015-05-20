@@ -18,47 +18,47 @@
 /*!
  The unique ID of the user.
  */
-@property (nonatomic, readonly) NSString *UID;
+@property (weak, nonatomic, readonly) NSString *UID;
 
 /*!
  The user's profile information as described in the [Profile](http://developers.gigya.com/020_Client_API/020_Accounts/010_Objects/Profile) object.
  */
-@property (nonatomic, readonly) NSDictionary *profile;
+@property (weak, nonatomic, readonly) NSDictionary *profile;
 
 /*!
  Custom data that was stored for the user.
  */
-@property (nonatomic, readonly) NSDictionary *data;
+@property (weak, nonatomic, readonly) NSDictionary *data;
 
 /*!
  The user's nickname, this may be either the nickname provided by the connected provider or a concatenation of the first and last names.
  */
-@property (nonatomic, readonly) NSString *nickname;
+@property (weak, nonatomic, readonly) NSString *nickname;
 
 /*!
  The user's first name.
  */
-@property (nonatomic, readonly) NSString *firstName;
+@property (weak, nonatomic, readonly) NSString *firstName;
 
 /*!
  The user's last name.
  */
-@property (nonatomic, readonly) NSString *lastName;
+@property (weak, nonatomic, readonly) NSString *lastName;
 
 /*!
  The user's email.
  */
-@property (nonatomic, readonly) NSString *email;
+@property (weak, nonatomic, readonly) NSString *email;
 
 /*!
  The URL of person's full size photo.
  */
-@property (nonatomic, readonly) NSURL *photoURL;
+@property (weak, nonatomic, readonly) NSURL *photoURL;
 
 /*!
  The URL of person's thumbnail photo if available.
  */
-@property (nonatomic, readonly) NSURL *thumbnailURL;
+@property (weak, nonatomic, readonly) NSURL *thumbnailURL;
 
 /** @name Accessing Keys and Values */
 
@@ -72,7 +72,7 @@
 /*!
  Returns the value associated with the given key.
  
- @returns The key for which to return the value.
+ @param key The key for which to return the value.
  */
 - (id)objectForKey:(NSString *)key;
 
@@ -80,6 +80,8 @@
  Returns the value associated with the given key.
  
  This method is the same as <objectForKey:>, but is required for subscripting syntax.
+ 
+ @param key The key for which to return the value.
  */
 - (id)objectForKeyedSubscript:(NSString *)key;
 

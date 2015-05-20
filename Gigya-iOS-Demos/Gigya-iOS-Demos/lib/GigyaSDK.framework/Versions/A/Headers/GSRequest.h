@@ -2,6 +2,12 @@
 #import "GSResponse.h"
 #import "GSSession.h"
 
+/*!
+ Response handler
+ 
+ @param response Response
+ @param error Error
+ */
 typedef void(^GSResponseHandler)(GSResponse *response, NSError *error);
 
 /** This class can be used to send requests to the [Gigya REST API](http://developers.gigya.com/037_API_reference).
@@ -20,7 +26,7 @@ typedef void(^GSResponseHandler)(GSResponse *response, NSError *error);
     }];
  
  */
-@interface GSRequest : NSObject <NSURLConnectionDelegate>
+@interface GSRequest : NSObject
 
 /** @name Creating a Request */
 
@@ -49,7 +55,7 @@ typedef void(^GSResponseHandler)(GSResponse *response, NSError *error);
 /*!
  The paremeters for the API method.
  */
-@property (nonatomic, retain) NSMutableDictionary* parameters;
+@property (nonatomic, strong) NSMutableDictionary* parameters;
 
 /*!
  Indicates whether HTTPS should be used. The default is `YES`. Overrides the global setting in [Gigya].
@@ -84,9 +90,9 @@ typedef void(^GSResponseHandler)(GSResponse *response, NSError *error);
  */
 - (void)cancel;
 
-@property (nonatomic, retain) GSSession *session;
-@property (nonatomic, readonly) NSString *requestID;
-@property (nonatomic)         BOOL includeAuthInfo;
+@property (nonatomic, strong) GSSession *session;
+@property (nonatomic, strong, readonly) NSString *requestID;
+@property (nonatomic) BOOL includeAuthInfo;
 @property (nonatomic, copy) NSString *source;
 
 @end
