@@ -1,7 +1,7 @@
 #import "GSResponse.h"
 
 /**
- This class represents Gigya account information, as returned from the [accounts.getAccountInfo](http://developers.gigya.com/037_API_reference/020_Accounts/accounts.getAccountInfo) method in the [Gigya REST API](http://developers.gigya.com/037_API_reference).
+ This class represents Gigya account information, as returned from the <a target="_blank" href="http://developers.gigya.com/037_API_reference/020_Accounts/accounts.getAccountInfo">accounts.getAccountInfo</a> method in the <a target="_blank" href="http://developers.gigya.com/037_API_reference">Gigya REST API</a>.
  
  `GSAccount` values can be accessed by keys (similiar to NSDictionary) and support subscripting syntax:
  
@@ -21,7 +21,7 @@
 @property (weak, nonatomic, readonly) NSString *UID;
 
 /*!
- The user's profile information as described in the [Profile](http://developers.gigya.com/020_Client_API/020_Accounts/010_Objects/Profile) object.
+ The user's profile information as described in the <a target="_blank" href="http://developers.gigya.com/020_Client_API/020_Accounts/010_Objects/Profile">Profile</a> object.
  */
 @property (weak, nonatomic, readonly) NSDictionary *profile;
 

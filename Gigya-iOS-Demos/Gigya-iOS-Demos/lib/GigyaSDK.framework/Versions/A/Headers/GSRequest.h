@@ -10,7 +10,7 @@
  */
 typedef void(^GSResponseHandler)(GSResponse *response, NSError *error);
 
-/** This class can be used to send requests to the [Gigya REST API](http://developers.gigya.com/037_API_reference).
+/** This class can be used to send requests to the <a target="_blank" href="http://developers.gigya.com/037_API_reference">Gigya REST API</a>.
  
  Example:
  

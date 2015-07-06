@@ -26,7 +26,7 @@
 - (void)webView:(id)webView finishedLoginWithResponse:(GSResponse *)response;
 
 /**
-  Invoked when a Gigya JavaScript SDK plugin fires a [custom event](http://developers.gigya.com/010_Developer_Guide/84_Using_the_Client_API/50_Events#Component_events) inside the web view. (For example - commentUI's [commentSubmitted](http://developers.gigya.com/020_Client_API/030_Comments/comments.showCommentsUI#onCommentSubmitted_Event_Data))
+  Invoked when a Gigya JavaScript SDK plugin fires a <a target="_blank" href="http://developers.gigya.com/010_Developer_Guide/84_Using_the_Client_API/50_Events#Component_events">custom event</a> inside the web view. (For example - commentUI's <a target="_blank" href="http://developers.gigya.com/020_Client_API/030_Comments/comments.showCommentsUI#onCommentSubmitted_Event_Data">commentSubmitted</a>)
  
  @param webView A registered web view that contains the origin plugin.
  @param event The event object.
