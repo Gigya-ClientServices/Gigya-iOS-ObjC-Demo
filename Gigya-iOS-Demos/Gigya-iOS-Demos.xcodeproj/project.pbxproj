@@ -447,11 +447,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/jayreardon/repos/Gigya-SDKs/iOS",
-					"/Users/jayreardon/repos/SocialNetworkSDKs/Facebook-iOS-SDK",
-					"/Users/jayreardon/repos/SocialNetworkSDKs/google-plus-ios-sdk-1.7.1",
-					"$(PROJECT_DIR)/Gigya-iOS-Demos/lib",
 					"$(PROJECT_DIR)/Gigya-iOS-Demos",
+					"$(PROJECT_DIR)/Gigya-iOS-Demos/Frameworks",
+					"$(PROJECT_DIR)/Gigya-iOS-Demos/lib",
 				);
 				INFOPLIST_FILE = "Gigya-iOS-Demos/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -467,11 +465,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/jayreardon/repos/Gigya-SDKs/iOS",
-					"/Users/jayreardon/repos/SocialNetworkSDKs/Facebook-iOS-SDK",
-					"/Users/jayreardon/repos/SocialNetworkSDKs/google-plus-ios-sdk-1.7.1",
-					"$(PROJECT_DIR)/Gigya-iOS-Demos/lib",
 					"$(PROJECT_DIR)/Gigya-iOS-Demos",
+					"$(PROJECT_DIR)/Gigya-iOS-Demos/Frameworks",
+					"$(PROJECT_DIR)/Gigya-iOS-Demos/lib",
 				);
 				INFOPLIST_FILE = "Gigya-iOS-Demos/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
