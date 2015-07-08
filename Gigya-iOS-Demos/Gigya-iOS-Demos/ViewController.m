@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import <GigyaSDK/Gigya.h>
 
 @interface ViewController ()
@@ -44,9 +45,11 @@
 
 - (IBAction)nativeLoginButtonAction:(id)sender {
     if (![Gigya session]){
+        NSMutableDictionary *params = [NSMutableDictionary dictionary];
+        [params setObject:[NSNumber numberWithInt:FBSDKLoginBehaviorNative] forKey:@"facebookLoginBehavior"];
         [Gigya showLoginProvidersDialogOver:self
                                   providers:@[@"facebook", @"twitter", @"googleplus"]
-                                 parameters:nil
+                                 parameters:params
                           completionHandler:^(GSUser *user, NSError *error) {
                               if (error && error.code != 200001) {
                                   UIAlertView *alert;
