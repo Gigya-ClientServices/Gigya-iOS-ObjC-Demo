@@ -48,7 +48,7 @@
         NSMutableDictionary *params = [NSMutableDictionary dictionary];
         [params setObject:[NSNumber numberWithInt:FBSDKLoginBehaviorNative] forKey:@"facebookLoginBehavior"];
         [Gigya showLoginProvidersDialogOver:self
-                                  providers:@[@"facebook", @"twitter", @"googleplus"]
+                                  providers:@[@"facebook", @"twitter", @"googleplus", @"linkedin"]
                                  parameters:params
                           completionHandler:^(GSUser *user, NSError *error) {
                               if (error && error.code != 200001) {
