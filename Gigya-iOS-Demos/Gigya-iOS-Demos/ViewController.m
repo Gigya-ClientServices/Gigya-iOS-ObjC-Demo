@@ -152,6 +152,13 @@
 
 - (void)accountDidLogin:(GSAccount *)account {
     self.user = account;
+    UIAlertView *alert;
+    alert = [[UIAlertView alloc] initWithTitle:@"Gigya Session Test"
+                                       message:@"You have logged in"
+                                      delegate:nil
+                             cancelButtonTitle:@"OK"
+                             otherButtonTitles:nil];
+    [alert show];
 }
 
 - (void)accountDidLogout {
