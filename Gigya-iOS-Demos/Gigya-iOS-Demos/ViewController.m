@@ -131,7 +131,14 @@
             // Login was successful
             }
             else {
-            // Handle error
+                // Handle error
+                UIAlertView *alert;
+                alert = [[UIAlertView alloc] initWithTitle:@"Error with login"
+                                                   message:error.localizedDescription
+                                                  delegate:nil
+                                         cancelButtonTitle:@"OK"
+                                         otherButtonTitles:nil];
+                [alert show];
             }
         }
         delegate:self
