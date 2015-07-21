@@ -2,7 +2,7 @@
 #import "GSObject.h"
 
 /** 
- This class represents a response from the <a target="_blank" href="http://developers.gigya.com/037_API_reference">Gigya REST API</a>.
+ This class represents a response from the <a target="_blank" href="http://developers.gigya.com/display/GD/REST+API">Gigya REST API</a>.
  
  `GSResponse` values can be accessed by keys (similiar to NSDictionary) and support subscripting syntax:
     
@@ -23,7 +23,7 @@
 @property (weak, readonly) NSString *method;
 
 /*!
- The result code of the operation. Value of 0 indicates success, any other number indicates failure. For a complete list of error codes, see the <a target="_blank" href="http://developers.gigya.com/030_API_reference/030_Response_Codes_and_Errors">Error Codes table</a>.
+ The result code of the operation. Value of 0 indicates success, any other number indicates failure. For a complete list of error codes, see the <a target="_blank" href="http://developers.gigya.com/display/GD/Response+Codes+and+Errors+REST">Error Codes table</a>.
  */
 @property (readonly) int errorCode;
 

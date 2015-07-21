@@ -19,7 +19,7 @@
 - (void)pluginView:(GSPluginView *)pluginView finishedLoadingPluginWithEvent:(NSDictionary *)event;
 
 /**
- Invoked when the plugin fires a <a target="_blank" href="http://developers.gigya.com/010_Developer_Guide/84_Using_the_Client_API/50_Events#Component_events">custom event</a>. (For example - commentUI's <a target="_blank" href="http://developers.gigya.com/020_Client_API/030_Comments/comments.showCommentsUI#onCommentSubmitted_Event_Data">commentSubmitted</a>)
+ Invoked when the plugin fires a <a target="_blank" href="http://developers.gigya.com/display/GD/Events#Events-PluginEvents">custom event</a>. (For example - commentUI's <a target="_blank" href="http://developers.gigya.com/display/GD/comments.showCommentsUI+JS#comments.showCommentsUIJS-onCommentSubmittedEventData">commentSubmitted</a>)
  
  @param pluginView The plugin view that has fired the event.
  @param event The event object.
@@ -36,15 +36,15 @@
 
 @end
 
-/** `GSPluginView` is a custom UIView that renders Gigya <a target="_blank" href="http://developers.gigya.com/010_Developer_Guide/18_Plugins">JS Plugins</a> and integrates them seamlessly with the Gigya iOS SDK.
+/** `GSPluginView` is a custom UIView that renders Gigya <a target="_blank" href="http://developers.gigya.com/display/GD/Plugins">JS Plugins</a> and integrates them seamlessly with the Gigya iOS SDK.
  
  `GSPluginView` currently supports the following plugins:
 
  | Plugin                                                                                                                               | Full Name            |
  |--------------------------------------------------------------------------------------------------------------------------------------|----------------------|
- | <a target="_blank" href="http://developers.gigya.com/010_Developer_Guide/18_Plugins/022_Comments_Version_2">Comments</a>             | comments.commentsUI  |
- | <a target="_blank" href="http://developers.gigya.com/010_Developer_Guide/18_Plugins/025_Rating_Reviews">Reviews</a>                  | comments.commentsUI  |
- | <a target="_blank" href="http://developers.gigya.com/010_Developer_Guide/10_UM360/040_Raas/030_Markup">RaaS Screen-Sets</a>          | accounts.screenSet   |
+ | <a target="_blank" href="http://developers.gigya.com/display/GD/Comments">Comments</a>                                               | comments.commentsUI  |
+ | <a target="_blank" href="http://developers.gigya.com/display/GD/Ratings+and+Reviews">Reviews</a>                                     | comments.commentsUI  |
+ | <a target="_blank" href="http://developers.gigya.com/display/GD/Default+Screen-sets">RaaS Screen-Sets</a>                            | accounts.screenSet   |
 
 
  Example - adding a `GSPluginView` to a `UIViewController`:
