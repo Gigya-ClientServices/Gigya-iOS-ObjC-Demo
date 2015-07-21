@@ -20,7 +20,7 @@
 @property (nonatomic, copy) NSString *token;
 
 /*!
- The session secret, used to <a target="_blank" href="http://developers.gigya.com/010_Developer_Guide/85_REST/OAuth1#SigningRequests">sign requests</a>.
+ The session secret, used to <a target="_blank" href="http://developers.gigya.com/display/GD/REST+API+with+Gigya's+Authorization+Method#RESTAPIwithGigya'sAuthorizationMethod-SigningtheRequest">sign requests</a>.
  */
 @property (nonatomic, copy) NSString *secret;
 

@@ -1,7 +1,7 @@
 #import "GSResponse.h"
 
 /**
- This class represents Gigya user information, as returned from the <a target="_blank" href="http://developers.gigya.com/037_API_reference/010_Socialize/socialize.getUserInfo">socialize.getUserInfo</a> method in the <a target="_blank" href="http://developers.gigya.com/037_API_reference">Gigya REST API</a>.
+ This class represents Gigya user information, as returned from the <a target="_blank" href="http://developers.gigya.com/display/GD/socialize.getUserInfo+REST">socialize.getUserInfo</a> method in the <a target="_blank" href="http://developers.gigya.com/display/GD/REST+API">Gigya REST API</a>.
  
  `GSUser` values can be accessed by keys (similiar to NSDictionary) and support subscripting syntax:
  
@@ -46,7 +46,7 @@
 @property (weak, nonatomic, readonly) NSString *email;
 
 /*!
- An array of dictionaries that represent <a target="_blank" href="http://developers.gigya.com/020_Client_API/010_Socialize/010_Objects/Identity_object">identity objects</a>, describing a person's identity on a specific provider.
+ An array of dictionaries that represent <a target="_blank" href="http://developers.gigya.com/display/GD/Identity+JS">identity objects</a>, describing a person's identity on a specific provider.
  */
 @property (weak, nonatomic, readonly) NSArray *identities;
 
