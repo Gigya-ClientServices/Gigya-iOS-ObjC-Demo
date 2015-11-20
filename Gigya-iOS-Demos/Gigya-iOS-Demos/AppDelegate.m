@@ -29,7 +29,13 @@ static NSString * const kClientId = @"224059159380-llqo0j946bbl3s4rqu35kkolpmhpl
 }
 
 - (void)accountDidLogin:(GSAccount *)account {
-    
+    UIAlertView *alert;
+    alert = [[UIAlertView alloc] initWithTitle:@"Gigya Session Test"
+                                       message:@"You have logged in"
+                                      delegate:nil
+                             cancelButtonTitle:@"OK"
+                             otherButtonTitles:nil];
+    [alert show];
 }
 
 - (void)accountDidLogout {

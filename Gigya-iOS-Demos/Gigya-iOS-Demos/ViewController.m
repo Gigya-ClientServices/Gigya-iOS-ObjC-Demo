@@ -46,7 +46,7 @@
 - (IBAction)nativeLoginButtonAction:(id)sender {
     if (![Gigya session]){
         NSMutableDictionary *params = [NSMutableDictionary dictionary];
-        [params setObject:[NSNumber numberWithInt:FBSDKLoginBehaviorNative] forKey:@"facebookLoginBehavior"];
+        //[params setObject:[NSNumber numberWithInt:FBSDKLoginBehaviorNative] forKey:@"facebookLoginBehavior"];
         [Gigya showLoginProvidersDialogOver:self
                                   providers:@[@"facebook", @"twitter", @"googleplus", @"linkedin"]
                                  parameters:params
