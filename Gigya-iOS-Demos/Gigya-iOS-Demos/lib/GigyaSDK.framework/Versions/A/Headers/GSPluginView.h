@@ -37,15 +37,6 @@
 @end
 
 /** `GSPluginView` is a custom UIView that renders Gigya <a target="_blank" href="http://developers.gigya.com/display/GD/Plugins">JS Plugins</a> and integrates them seamlessly with the Gigya iOS SDK.
- 
- `GSPluginView` currently supports the following plugins:
-
- | Plugin                                                                                                                               | Full Name            |
- |--------------------------------------------------------------------------------------------------------------------------------------|----------------------|
- | <a target="_blank" href="http://developers.gigya.com/display/GD/Comments">Comments</a>                                               | comments.commentsUI  |
- | <a target="_blank" href="http://developers.gigya.com/display/GD/Ratings+and+Reviews">Reviews</a>                                     | comments.commentsUI  |
- | <a target="_blank" href="http://developers.gigya.com/display/GD/Default+Screen-sets">RaaS Screen-Sets</a>                            | accounts.screenSet   |
-
 
  Example - adding a `GSPluginView` to a `UIViewController`:
  

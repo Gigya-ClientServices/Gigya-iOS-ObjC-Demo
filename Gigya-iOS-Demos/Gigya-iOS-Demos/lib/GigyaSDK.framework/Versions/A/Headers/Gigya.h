@@ -38,7 +38,7 @@
 #endif
 
 // Consts
-static NSString * const GSGigyaSDKVersion = @"iOS_3.4.1";
+static NSString * const GSGigyaSDKVersion = @"iOS_3.4.2";
 static NSString * const GSDefaultAPIDomain = @"us1.gigya.com";
 static NSString * const GSGigyaSDKDomain = @"com.gigya.GigyaSDK";
 static NSString * const GSInvalidOperationException = @"com.gigya.GigyaSDK:InvalidOperationException";
