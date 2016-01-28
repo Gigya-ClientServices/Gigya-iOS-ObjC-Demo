@@ -36,7 +36,7 @@ $ sudo gem install cocoapods
 ```
 If you get any errors here, please visit the following guide: https://guides.cocoapods.org/using/troubleshooting#installing-cocoapods
 
-## XCode Remediateion Steps
+## XCode Remediation Steps
 If the project fails to compile, perform the following steps:
 
 1. Completely quit XCode.
