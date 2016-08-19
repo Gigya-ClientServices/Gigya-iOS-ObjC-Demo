@@ -46,6 +46,7 @@
 // Web View Delegate functionality
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
     if ([GSWebBridge handleRequest:request webView:webView]) {
+        
         return NO;
     }
     return YES;
@@ -60,6 +61,7 @@
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
     // Report errors here
+    UIAlertController *alertController;
     UIAlertView *alert;
     alert = [[UIAlertView alloc] initWithTitle:@"GSWebBridge"
                                        message:@"WebView Failed to load with an error"
