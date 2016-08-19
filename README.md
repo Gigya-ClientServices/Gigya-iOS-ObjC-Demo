@@ -1,4 +1,4 @@
-# Gigya-iOS-Demo
+# Gigya-iOS-ObjC-Demo
 
 This is an iOS Demo project written in Objective-C with XCode that provide demos of Gigya's native iOS SDK and related functionality. It provides demos of the following:
 
