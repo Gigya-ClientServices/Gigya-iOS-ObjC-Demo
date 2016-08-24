@@ -297,12 +297,19 @@
                             <constraint firstItem="hb7-TJ-s9Q" firstAttribute="top" secondItem="bUJ-Sr-CTe" secondAttribute="bottom" id="wtc-gX-y8Z"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Comments View" id="yzt-es-m2V"/>
+                    <navigationItem key="navigationItem" title="Comments View" id="yzt-es-m2V">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="oco-zu-swS">
+                            <connections>
+                                <segue destination="v18-4u-7Q8" kind="unwind" unwindAction="prepareForUnwind:" id="STi-U4-zLF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="commentsScrollView" destination="hb7-TJ-s9Q" id="1Ax-iP-DqW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VRs-1z-hVI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="v18-4u-7Q8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1112" y="504"/>
         </scene>
@@ -398,12 +405,19 @@
                             <constraint firstItem="M1q-3O-UrQ" firstAttribute="top" secondItem="GHb-AK-Y6M" secondAttribute="bottom" constant="8" symbolic="YES" id="zbc-Y1-9OZ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Publish User Action" id="uXI-9o-f51"/>
+                    <navigationItem key="navigationItem" title="Publish User Action" id="uXI-9o-f51">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="dQy-uQ-7bC">
+                            <connections>
+                                <segue destination="upX-tJ-Irr" kind="unwind" unwindAction="prepareForUnwind:" id="7eh-ZC-pwq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="shareText" destination="fB3-bq-OtA" id="EkR-sQ-nbQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4cd-PA-9nE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="upX-tJ-Irr" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="427" y="504"/>
         </scene>
@@ -426,12 +440,19 @@
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="GSWebBridge" id="hAj-hJ-K2W"/>
+                    <navigationItem key="navigationItem" title="GSWebBridge" id="hAj-hJ-K2W">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="alf-NO-89n">
+                            <connections>
+                                <segue destination="vbk-tn-IMr" kind="unwind" unwindAction="prepareForUnwind:" id="Z6u-dG-F7s"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="webBridgeWebView" destination="eTf-HM-3z2" id="qpt-nR-rCd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C38-Uu-dQj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="vbk-tn-IMr" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-277" y="504"/>
         </scene>

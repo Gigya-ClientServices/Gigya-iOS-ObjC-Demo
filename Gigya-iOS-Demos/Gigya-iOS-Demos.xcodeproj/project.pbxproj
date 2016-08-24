@@ -11,7 +11,6 @@
 		52341FCB1B0D1D38008EBE29 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52341FC81B0D1D38008EBE29 /* FBSDKCoreKit.framework */; };
 		52341FCC1B0D1D38008EBE29 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52341FC91B0D1D38008EBE29 /* FBSDKLoginKit.framework */; };
 		52341FCD1B0D1D38008EBE29 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52341FCA1B0D1D38008EBE29 /* FBSDKShareKit.framework */; };
-		5284C6171B5ED66200D2D70C /* GigyaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5284C6161B5ED66200D2D70C /* GigyaSDK.framework */; };
 		52BCE1E21A48A65800924AD8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCE1E11A48A65800924AD8 /* main.m */; };
 		52BCE1E51A48A65800924AD8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCE1E41A48A65800924AD8 /* AppDelegate.m */; };
 		52BCE1E81A48A65800924AD8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCE1E71A48A65800924AD8 /* ViewController.m */; };
@@ -36,6 +35,7 @@
 		52BCE2401A49028500924AD8 /* GSWebBridgeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCE2381A49028500924AD8 /* GSWebBridgeController.m */; };
 		52BCE2421A49028500924AD8 /* PublishActionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCE23C1A49028500924AD8 /* PublishActionController.m */; };
 		52BCE2451A4AA85600924AD8 /* G_256.png in Resources */ = {isa = PBXBuildFile; fileRef = 52BCE2441A4AA85600924AD8 /* G_256.png */; };
+		C84BF1221D6E0D8F00848FED /* GigyaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84BF1211D6E0D8F00848FED /* GigyaSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +53,6 @@
 		52341FC81B0D1D38008EBE29 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = lib/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		52341FC91B0D1D38008EBE29 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = lib/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		52341FCA1B0D1D38008EBE29 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = lib/FBSDKShareKit.framework; sourceTree = "<group>"; };
-		5284C6161B5ED66200D2D70C /* GigyaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GigyaSDK.framework; path = lib/GigyaSDK.framework; sourceTree = "<group>"; };
 		52BCE1DC1A48A65800924AD8 /* Gigya-iOS-Demos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gigya-iOS-Demos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52BCE1E01A48A65800924AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52BCE1E11A48A65800924AD8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -89,6 +88,7 @@
 		52BCE2441A4AA85600924AD8 /* G_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = G_256.png; sourceTree = "<group>"; };
 		794054ABFFCE8A8587941198 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C425DB681E404B16A7325C0E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C84BF1211D6E0D8F00848FED /* GigyaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GigyaSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,13 +104,13 @@
 				52BCE21F1A48D8BE00924AD8 /* CoreMotion.framework in Frameworks */,
 				52BCE2201A48D8BE00924AD8 /* CoreText.framework in Frameworks */,
 				52BCE2211A48D8BE00924AD8 /* Foundation.framework in Frameworks */,
-				5284C6171B5ED66200D2D70C /* GigyaSDK.framework in Frameworks */,
 				52BCE22C1A48DAD300924AD8 /* GoogleOpenSource.framework in Frameworks */,
 				52BCE2221A48D8BE00924AD8 /* MediaPlayer.framework in Frameworks */,
 				52BCE22D1A48DAD300924AD8 /* GooglePlus.framework in Frameworks */,
 				52341FCB1B0D1D38008EBE29 /* FBSDKCoreKit.framework in Frameworks */,
 				52BCE2231A48D8BE00924AD8 /* Security.framework in Frameworks */,
 				52BCE2241A48D8BE00924AD8 /* SystemConfiguration.framework in Frameworks */,
+				C84BF1221D6E0D8F00848FED /* GigyaSDK.framework in Frameworks */,
 				52341FCC1B0D1D38008EBE29 /* FBSDKLoginKit.framework in Frameworks */,
 				52BCE2251A48D8BE00924AD8 /* UIKit.framework in Frameworks */,
 				2A58F8589606AD265CDA1AA0 /* libPods.a in Frameworks */,
@@ -207,7 +207,7 @@
 		52BCE2071A48CE9500924AD8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5284C6161B5ED66200D2D70C /* GigyaSDK.framework */,
+				C84BF1211D6E0D8F00848FED /* GigyaSDK.framework */,
 				52341FC81B0D1D38008EBE29 /* FBSDKCoreKit.framework */,
 				52341FC91B0D1D38008EBE29 /* FBSDKLoginKit.framework */,
 				52341FCA1B0D1D38008EBE29 /* FBSDKShareKit.framework */,
