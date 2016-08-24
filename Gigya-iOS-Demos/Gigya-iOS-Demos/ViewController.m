@@ -27,6 +27,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)prepareForUnwind:(UIStoryboardSegue *)segue {
+}
+
 - (IBAction)logoutButtonAction:(id)sender {
     [Gigya logoutWithCompletionHandler:^(GSResponse *response, NSError *error) {
         self.user = nil;
@@ -44,7 +47,7 @@
 }
 
 - (IBAction)nativeLoginButtonAction:(id)sender {
-    if (![Gigya session]){
+    if (![Gigya isSessionValid]){
         NSMutableDictionary *params = [NSMutableDictionary dictionary];
         //[params setObject:[NSNumber numberWithInt:FBSDKLoginBehaviorNative] forKey:@"facebookLoginBehavior"];
         [Gigya showLoginProvidersDialogOver:self
@@ -94,7 +97,7 @@
 
 - (IBAction)mobileSessionCheckButtonAction:(id)sender {
     // If there is no Gigya session
-    if (![Gigya session]) {
+    if (![Gigya isSessionValid]) {
         UIAlertView *alert;
         alert = [[UIAlertView alloc] initWithTitle:@"Gigya Session Test"
                                      message:@"You are not logged in"
