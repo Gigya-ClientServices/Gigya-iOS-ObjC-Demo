@@ -11,6 +11,13 @@
 		52341FCB1B0D1D38008EBE29 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52341FC81B0D1D38008EBE29 /* FBSDKCoreKit.framework */; };
 		52341FCC1B0D1D38008EBE29 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52341FC91B0D1D38008EBE29 /* FBSDKLoginKit.framework */; };
 		52341FCD1B0D1D38008EBE29 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52341FCA1B0D1D38008EBE29 /* FBSDKShareKit.framework */; };
+		527573AF1DC2C0EB00B3F2D5 /* GoogleAppUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 527573AB1DC2C0EB00B3F2D5 /* GoogleAppUtilities.framework */; };
+		527573B01DC2C0EB00B3F2D5 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 527573AC1DC2C0EB00B3F2D5 /* GoogleSignIn.framework */; };
+		527573B11DC2C0EB00B3F2D5 /* GoogleSignInDependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 527573AD1DC2C0EB00B3F2D5 /* GoogleSignInDependencies.framework */; };
+		527573B21DC2C0EB00B3F2D5 /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 527573AE1DC2C0EB00B3F2D5 /* GoogleSymbolUtilities.framework */; };
+		527573B41DC2C20500B3F2D5 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 527573B31DC2C20500B3F2D5 /* SafariServices.framework */; };
+		527573BC1DC2C5E300B3F2D5 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 527573BB1DC2C5E300B3F2D5 /* Bolts.framework */; };
+		5284C6171B5ED66200D2D70C /* GigyaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5284C6161B5ED66200D2D70C /* GigyaSDK.framework */; };
 		52BCE1E21A48A65800924AD8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCE1E11A48A65800924AD8 /* main.m */; };
 		52BCE1E51A48A65800924AD8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCE1E41A48A65800924AD8 /* AppDelegate.m */; };
 		52BCE1E81A48A65800924AD8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCE1E71A48A65800924AD8 /* ViewController.m */; };
@@ -29,13 +36,10 @@
 		52BCE2231A48D8BE00924AD8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BCE2181A48D8BE00924AD8 /* Security.framework */; };
 		52BCE2241A48D8BE00924AD8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BCE2191A48D8BE00924AD8 /* SystemConfiguration.framework */; };
 		52BCE2251A48D8BE00924AD8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BCE21A1A48D8BE00924AD8 /* UIKit.framework */; };
-		52BCE22C1A48DAD300924AD8 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BCE2281A48DAD300924AD8 /* GoogleOpenSource.framework */; };
-		52BCE22D1A48DAD300924AD8 /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BCE2291A48DAD300924AD8 /* GooglePlus.framework */; };
 		52BCE23F1A49028500924AD8 /* CommentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCE2361A49028500924AD8 /* CommentsViewController.m */; };
 		52BCE2401A49028500924AD8 /* GSWebBridgeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCE2381A49028500924AD8 /* GSWebBridgeController.m */; };
 		52BCE2421A49028500924AD8 /* PublishActionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCE23C1A49028500924AD8 /* PublishActionController.m */; };
 		52BCE2451A4AA85600924AD8 /* G_256.png in Resources */ = {isa = PBXBuildFile; fileRef = 52BCE2441A4AA85600924AD8 /* G_256.png */; };
-		C84BF1221D6E0D8F00848FED /* GigyaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84BF1211D6E0D8F00848FED /* GigyaSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,13 @@
 		52341FC81B0D1D38008EBE29 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = lib/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		52341FC91B0D1D38008EBE29 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = lib/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		52341FCA1B0D1D38008EBE29 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = lib/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		527573AB1DC2C0EB00B3F2D5 /* GoogleAppUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppUtilities.framework; path = lib/GoogleAppUtilities.framework; sourceTree = "<group>"; };
+		527573AC1DC2C0EB00B3F2D5 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = lib/GoogleSignIn.framework; sourceTree = "<group>"; };
+		527573AD1DC2C0EB00B3F2D5 /* GoogleSignInDependencies.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignInDependencies.framework; path = lib/GoogleSignInDependencies.framework; sourceTree = "<group>"; };
+		527573AE1DC2C0EB00B3F2D5 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = lib/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		527573B31DC2C20500B3F2D5 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		527573BB1DC2C5E300B3F2D5 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = lib/Bolts.framework; sourceTree = "<group>"; };
+		5284C6161B5ED66200D2D70C /* GigyaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GigyaSDK.framework; path = lib/GigyaSDK.framework; sourceTree = "<group>"; };
 		52BCE1DC1A48A65800924AD8 /* Gigya-iOS-Demos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gigya-iOS-Demos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52BCE1E01A48A65800924AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52BCE1E11A48A65800924AD8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -77,8 +88,6 @@
 		52BCE2181A48D8BE00924AD8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		52BCE2191A48D8BE00924AD8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		52BCE21A1A48D8BE00924AD8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		52BCE2281A48DAD300924AD8 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleOpenSource.framework; path = lib/GoogleOpenSource.framework; sourceTree = "<group>"; };
-		52BCE2291A48DAD300924AD8 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlus.framework; path = lib/GooglePlus.framework; sourceTree = "<group>"; };
 		52BCE2351A49028500924AD8 /* CommentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentsViewController.h; sourceTree = "<group>"; };
 		52BCE2361A49028500924AD8 /* CommentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentsViewController.m; sourceTree = "<group>"; };
 		52BCE2371A49028500924AD8 /* GSWebBridgeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSWebBridgeController.h; sourceTree = "<group>"; };
@@ -88,7 +97,6 @@
 		52BCE2441A4AA85600924AD8 /* G_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = G_256.png; sourceTree = "<group>"; };
 		794054ABFFCE8A8587941198 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C425DB681E404B16A7325C0E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		C84BF1211D6E0D8F00848FED /* GigyaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GigyaSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,21 +104,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				527573B41DC2C20500B3F2D5 /* SafariServices.framework in Frameworks */,
 				52BCE21B1A48D8BE00924AD8 /* AddressBook.framework in Frameworks */,
 				52BCE21C1A48D8BE00924AD8 /* AssetsLibrary.framework in Frameworks */,
+				527573B21DC2C0EB00B3F2D5 /* GoogleSymbolUtilities.framework in Frameworks */,
 				52341FCD1B0D1D38008EBE29 /* FBSDKShareKit.framework in Frameworks */,
 				52BCE21D1A48D8BE00924AD8 /* CoreGraphics.framework in Frameworks */,
 				52BCE21E1A48D8BE00924AD8 /* CoreLocation.framework in Frameworks */,
 				52BCE21F1A48D8BE00924AD8 /* CoreMotion.framework in Frameworks */,
+				527573AF1DC2C0EB00B3F2D5 /* GoogleAppUtilities.framework in Frameworks */,
+				527573B01DC2C0EB00B3F2D5 /* GoogleSignIn.framework in Frameworks */,
+				527573B11DC2C0EB00B3F2D5 /* GoogleSignInDependencies.framework in Frameworks */,
 				52BCE2201A48D8BE00924AD8 /* CoreText.framework in Frameworks */,
 				52BCE2211A48D8BE00924AD8 /* Foundation.framework in Frameworks */,
-				52BCE22C1A48DAD300924AD8 /* GoogleOpenSource.framework in Frameworks */,
+				5284C6171B5ED66200D2D70C /* GigyaSDK.framework in Frameworks */,
+				527573BC1DC2C5E300B3F2D5 /* Bolts.framework in Frameworks */,
 				52BCE2221A48D8BE00924AD8 /* MediaPlayer.framework in Frameworks */,
-				52BCE22D1A48DAD300924AD8 /* GooglePlus.framework in Frameworks */,
 				52341FCB1B0D1D38008EBE29 /* FBSDKCoreKit.framework in Frameworks */,
 				52BCE2231A48D8BE00924AD8 /* Security.framework in Frameworks */,
 				52BCE2241A48D8BE00924AD8 /* SystemConfiguration.framework in Frameworks */,
-				C84BF1221D6E0D8F00848FED /* GigyaSDK.framework in Frameworks */,
 				52341FCC1B0D1D38008EBE29 /* FBSDKLoginKit.framework in Frameworks */,
 				52BCE2251A48D8BE00924AD8 /* UIKit.framework in Frameworks */,
 				2A58F8589606AD265CDA1AA0 /* libPods.a in Frameworks */,
@@ -130,6 +142,7 @@
 		1D4FC73A3E8168BB7F9D43A1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				527573B31DC2C20500B3F2D5 /* SafariServices.framework */,
 				794054ABFFCE8A8587941198 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -207,12 +220,15 @@
 		52BCE2071A48CE9500924AD8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C84BF1211D6E0D8F00848FED /* GigyaSDK.framework */,
+				527573BB1DC2C5E300B3F2D5 /* Bolts.framework */,
+				527573AB1DC2C0EB00B3F2D5 /* GoogleAppUtilities.framework */,
+				527573AC1DC2C0EB00B3F2D5 /* GoogleSignIn.framework */,
+				527573AD1DC2C0EB00B3F2D5 /* GoogleSignInDependencies.framework */,
+				527573AE1DC2C0EB00B3F2D5 /* GoogleSymbolUtilities.framework */,
+				5284C6161B5ED66200D2D70C /* GigyaSDK.framework */,
 				52341FC81B0D1D38008EBE29 /* FBSDKCoreKit.framework */,
 				52341FC91B0D1D38008EBE29 /* FBSDKLoginKit.framework */,
 				52341FCA1B0D1D38008EBE29 /* FBSDKShareKit.framework */,
-				52BCE2281A48DAD300924AD8 /* GoogleOpenSource.framework */,
-				52BCE2291A48DAD300924AD8 /* GooglePlus.framework */,
 				52BCE2101A48D8BE00924AD8 /* AddressBook.framework */,
 				52BCE2111A48D8BE00924AD8 /* AssetsLibrary.framework */,
 				52BCE2121A48D8BE00924AD8 /* CoreGraphics.framework */,
@@ -249,7 +265,6 @@
 				52BCE1D91A48A65800924AD8 /* Frameworks */,
 				52BCE1DA1A48A65800924AD8 /* Resources */,
 				FB5A4D44CCBA0146ABCB5135 /* Copy Pods Resources */,
-				32C23E8C9A89C3131F0E1EBD /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -338,21 +353,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		32C23E8C9A89C3131F0E1EBD /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		DCF11A48B6F34272C9DF97B3 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -528,6 +528,7 @@
 					"$(PROJECT_DIR)/Gigya-iOS-Demos/lib",
 				);
 				INFOPLIST_FILE = "Gigya-iOS-Demos/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "$(inherited)";
@@ -548,6 +549,7 @@
 					"$(PROJECT_DIR)/Gigya-iOS-Demos/lib",
 				);
 				INFOPLIST_FILE = "Gigya-iOS-Demos/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
