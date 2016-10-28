@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+- (void)alertForView:(UIViewController *)view title:(NSString*)ttl message:(NSString*)msg button:(NSString*)btn;
 
 @end
 

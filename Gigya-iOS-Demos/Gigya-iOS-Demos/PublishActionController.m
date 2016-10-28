@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Gigya. All rights reserved.
 //
 
+#import "AppDelegate.h"
 #import "PublishActionController.h"
 #import <GigyaSDK/Gigya.h>
 
@@ -30,27 +31,16 @@
 - (IBAction)publishButtonAction:(id)sender {
     
     if (![Gigya isSessionValid]) {
-        UIAlertView *alert;
-        alert = [[UIAlertView alloc] initWithTitle:@"Alert"
-                                           message:@"You must be logged in to do that!"
-                                          delegate:nil
-                                 cancelButtonTitle:@"OK"
-                                 otherButtonTitles:nil];
-        [alert show];
+        AppDelegate *ag = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+        [ag alertForView:self title:@"Alert" message:@"You must be logged in to do that!" button:@"OK"];
     } else {
         [Gigya getSessionWithCompletionHandler:^(GSSession * _Nullable session) {
             if ([[session lastLoginProvider] isEqual: @"facebook"]){
                 [Gigya requestNewFacebookPublishPermissions:@"publish_actions" viewController:self responseHandler:^(BOOL granted, NSError * _Nullable error, NSArray * _Nullable declinedPermissions) {
                     if (!granted) {
-                        UIAlertView *alert;
                         // Handle error
-                        alert = [[UIAlertView alloc] initWithTitle:@"Gigya Publish User Action"
-                                                           message:error.description
-                                                          delegate:nil
-                                                 cancelButtonTitle:@"OK"
-                                                 otherButtonTitles:nil
-                                 ];
-                        [alert show];
+                        AppDelegate *ag = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+                        [ag alertForView:self title:@"Gigya Publish User Action" message:error.description button:@"OK"];
                         return;
                     }
                 }];

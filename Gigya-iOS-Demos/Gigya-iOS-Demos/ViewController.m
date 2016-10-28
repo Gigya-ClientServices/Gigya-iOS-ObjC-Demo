@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Gigya. All rights reserved.
 //
 
+#import "AppDelegate.h"
 #import "ViewController.h"
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import <GigyaSDK/Gigya.h>
@@ -34,19 +35,15 @@
     [Gigya logoutWithCompletionHandler:^(GSResponse *response, NSError *error) {
         self.user = nil;
         if (error) {
-            UIAlertView *alert;
-            alert = [[UIAlertView alloc] initWithTitle:@"Gigya Logout"
-                                         message:[@"There was a problem logging out. Gigya returned error code " stringByAppendingFormat:@"%d",response.errorCode]
-                                         delegate:nil
-                                         cancelButtonTitle:@"OK"
-                                         otherButtonTitles:nil];
-            [alert show];
+            AppDelegate *ag = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+            [ag alertForView:self title:@"Gigya Logout" message:[@"There was a problem logging out. Gigya returned error code " stringByAppendingFormat:@"%d",response.errorCode] button:@"OK"];
         }
     }];
 
 }
 
 - (IBAction)nativeLoginButtonAction:(id)sender {
+
     if (![Gigya isSessionValid]){
         NSMutableDictionary *params = [NSMutableDictionary dictionary];
         //[params setObject:[NSNumber numberWithInt:FBSDKLoginBehaviorNative] forKey:@"facebookLoginBehavior"];
@@ -55,15 +52,9 @@
                                  parameters:params
                           completionHandler:^(GSUser *user, NSError *error) {
                               if (error && error.code != 200001) {
-                                  UIAlertView *alert;
                                   // Handle error
-                                  alert = [[UIAlertView alloc] initWithTitle:@"Gigya Native Mobile Login"
-                                                                     message:[@"There was a problem logging in with Gigya. Gigya returned error code " stringByAppendingFormat:@"%ld", (long)error.code]
-                                                                    delegate:nil
-                                                           cancelButtonTitle:@"OK"
-                                                           otherButtonTitles:nil
-                                           ];
-                                  [alert show];
+                                  AppDelegate *ag = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+                                  [ag alertForView:self title:@"Gigya Native Mobile Login" message:[@"There was a problem logging in with Gigya. Gigya returned error code " stringByAppendingFormat:@"%ld", (long)error.code] button:@"OK"];
                               }
                               else {
                                   // Anything?
@@ -71,7 +62,6 @@
                           }
          ];
     } else {
-        UIAlertView *alert;
         if (!self.user) {
             // Make Request to get User if it's empty.
             // Step 1 - Create the request and set the parameters
@@ -85,44 +75,34 @@
                 }
             }];
         }
+        AppDelegate *ag = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+        [ag alertForView:self title:@"Alert" message:@"You are already logged in" button:@"OK"];
         
-        alert = [[UIAlertView alloc] initWithTitle:@"Alert"
-                                           message:@"You are already logged in!"
-                                          delegate:nil
-                                 cancelButtonTitle:@"OK"
-                                 otherButtonTitles:nil];
-        [alert show];
     }
 }
 
 - (IBAction)mobileSessionCheckButtonAction:(id)sender {
+    __block NSString *msg;
     // If there is no Gigya session
     if (![Gigya isSessionValid]) {
-        UIAlertView *alert;
-        alert = [[UIAlertView alloc] initWithTitle:@"Gigya Session Test"
-                                     message:@"You are not logged in"
-                                     delegate:nil
-                                     cancelButtonTitle:@"OK"
-                                     otherButtonTitles:nil];
-        [alert show];
+        msg = @"You are not logged in.";
+
     } else {
         GSRequest *request = [GSRequest requestForMethod:@"accounts.getAccountInfo"];
         [request sendWithResponseHandler:^(GSResponse *response, NSError *error) {
             if (!error) {
                 self.user = (GSAccount *)response;
-                UIAlertView *alert;
-                alert = [[UIAlertView alloc] initWithTitle:@"Gigya Session Test"
-                                                   message:[@"User is logged in\n" stringByAppendingFormat: @"%@ %@ (%@)", response[@"profile"][@"firstName"], response[@"profile"][@"lastName"], response[@"profile"][@"email"]]
-                                                  delegate:nil
-                                         cancelButtonTitle:@"OK"
-                                         otherButtonTitles:nil];
-                [alert show];
+                msg = [@"User is logged in\n" stringByAppendingFormat: @"%@ %@ (%@)", response[@"profile"][@"firstName"], response[@"profile"][@"lastName"], response[@"profile"][@"email"]];
             }
             else {
                 NSLog(@"Got error on getAccountInfo: %@", error);
             }
         }];
     }
+
+    AppDelegate *ag = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    [ag alertForView:self title:@"Alert" message:msg button:@"OK"];
+    
 }
 
 
@@ -135,13 +115,8 @@
             }
             else {
                 // Handle error
-                UIAlertView *alert;
-                alert = [[UIAlertView alloc] initWithTitle:@"Error with login"
-                                                   message:error.localizedDescription
-                                                  delegate:nil
-                                         cancelButtonTitle:@"OK"
-                                         otherButtonTitles:nil];
-                [alert show];
+                AppDelegate *ag = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+                [ag alertForView:self title:@"Error with login" message:error.localizedDescription button:@"OK"];
             }
         }
         delegate:self
@@ -162,13 +137,8 @@
 
 - (void)accountDidLogin:(GSAccount *)account {
     self.user = account;
-    UIAlertView *alert;
-    alert = [[UIAlertView alloc] initWithTitle:@"Gigya Session Test"
-                                       message:@"You have logged in"
-                                      delegate:nil
-                             cancelButtonTitle:@"OK"
-                             otherButtonTitles:nil];
-    [alert show];
+    AppDelegate *ag = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    [ag alertForView:self title:@"Gigya Session Test" message:@"Gigya Session Test" button:@"OK"];
 }
 
 - (void)accountDidLogout {
