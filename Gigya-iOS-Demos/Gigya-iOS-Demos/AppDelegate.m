@@ -11,13 +11,29 @@
 #import <GigyaSDK/Gigya.h>
 
 
-@interface AppDelegate () <GSAccountsDelegate>
-
+@interface AppDelegate () <GSAccountsDelegate, UIApplicationDelegate>
+- (void)alertForView:(UIViewController *)view title:(NSString*)ttl message:(NSString*)msg button:(NSString*)btn;
 @end
 
 @implementation AppDelegate
 
 static NSString * const kClientId = @"224059159380-llqo0j946bbl3s4rqu35kkolpmhpl07h.apps.googleusercontent.com";
+
+- (void)alertForView:(UIViewController *)view title:(NSString*)ttl message:(NSString*)msg button:(NSString*)btn {
+    __block UIAlertController *alert;
+    __block UIAlertAction *alertAction;
+    alert = [UIAlertController alertControllerWithTitle:ttl
+                                                message:msg
+                                         preferredStyle: UIAlertControllerStyleAlert];
+    alertAction = [UIAlertAction actionWithTitle:btn
+                                           style:UIAlertActionStyleDefault
+                                         handler:^(UIAlertAction *action) {
+                                             [alert dismissViewControllerAnimated:YES completion:nil];
+                                         }
+                   ];
+    [alert addAction:alertAction];
+    [view presentViewController:alert animated:YES completion:nil];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
@@ -29,24 +45,20 @@ static NSString * const kClientId = @"224059159380-llqo0j946bbl3s4rqu35kkolpmhpl
 }
 
 - (void)accountDidLogin:(GSAccount *)account {
-    UIAlertView *alert;
-    alert = [[UIAlertView alloc] initWithTitle:@"Gigya Session Test"
-                                       message:@"You have logged in"
-                                      delegate:nil
-                             cancelButtonTitle:@"OK"
-                             otherButtonTitles:nil];
-    [alert show];
+    UIWindow *alertWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    alertWindow.rootViewController = [[UIViewController alloc] init];
+    alertWindow.windowLevel = UIWindowLevelAlert + 1;
+    [alertWindow makeKeyAndVisible];
+    [self alertForView:alertWindow.rootViewController title:@"Gigya Login" message:@"Success!" button:@"OK"];
 }
 
 - (void)accountDidLogout {
-    UIAlertView *alert;
-    alert = [[UIAlertView alloc] initWithTitle:@"Gigya Logout"
-                                       message:@"You have successfully logged out of Gigya."
-                                      delegate:nil
-                             cancelButtonTitle:@"OK"
-                             otherButtonTitles:nil];
-    [alert show];
-}
+    UIWindow *alertWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    alertWindow.rootViewController = [[UIViewController alloc] init];
+    alertWindow.windowLevel = UIWindowLevelAlert + 1;
+    [alertWindow makeKeyAndVisible];
+    [self alertForView:alertWindow.rootViewController title:@"Gigya Logout" message:@"Success!" button:@"OK"];
+    }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

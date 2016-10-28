@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Gigya. All rights reserved.
 //
 
+#import "AppDelegate.h"
 #import "GSWebBridgeController.h"
 #import <GigyaSDK/Gigya.h>
 
@@ -61,14 +62,9 @@
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
     // Report errors here
-    UIAlertController *alertController;
-    UIAlertView *alert;
-    alert = [[UIAlertView alloc] initWithTitle:@"GSWebBridge"
-                                       message:@"WebView Failed to load with an error"
-                                      delegate:nil
-                             cancelButtonTitle:@"OK"
-                             otherButtonTitles:nil];
-    [alert show];
+
+    AppDelegate *ag = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    [ag alertForView:self title:@"GSWebBridge" message:@"WebView Failed to load with an error" button:@"OK"];
 }
 
 @end

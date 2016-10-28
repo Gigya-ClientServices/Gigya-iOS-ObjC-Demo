@@ -48,9 +48,9 @@
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     
     GSPluginView *pluginView = [[GSPluginView alloc] initWithFrame:CGRectMake(0,
-                                                                              [[UIScreen mainScreen] applicationFrame].size.height/2,
-                                                                              [[UIScreen mainScreen] applicationFrame].size.width,
-                                                                              ([[UIScreen mainScreen] applicationFrame].size.height/2) + [statBarHeight floatValue])];
+                                                                              [[UIScreen mainScreen] bounds].size.height/2,
+                                                                              [[UIScreen mainScreen] bounds].size.width,
+                                                                              ([[UIScreen mainScreen] bounds].size.height/2) + [statBarHeight floatValue])];
     pluginView.delegate = self;
     
     [params setObject:@"Comments" forKey:@"categoryID"];
