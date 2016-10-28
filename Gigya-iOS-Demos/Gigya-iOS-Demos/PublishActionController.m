@@ -39,26 +39,23 @@
         [alert show];
     } else {
         [Gigya getSessionWithCompletionHandler:^(GSSession * _Nullable session) {
-            if ([[session lastLoginProvider] isEqual: @"facebook"]) {
-                [Gigya requestNewFacebookPublishPermissions:@"publish_actions"
-                                            viewController:self
-                                            responseHandler:^(BOOL granted, NSError * _Nullable error, NSArray * _Nullable declinedPermissions) {
-                                                if (!granted) {
-                                                    UIAlertView *alert;
-                                                    // Handle error
-                                                    alert = [[UIAlertView alloc] initWithTitle:@"Gigya Publish User Action"
-                                                                                       message:error.description
-                                                                                      delegate:nil
-                                                                             cancelButtonTitle:@"OK"
-                                                                             otherButtonTitles:nil
-                                                             ];
-                                                    [alert show];
-                                                    return;
-                                                }
-                                            }];
+            if ([[session lastLoginProvider] isEqual: @"facebook"]){
+                [Gigya requestNewFacebookPublishPermissions:@"publish_actions" viewController:self responseHandler:^(BOOL granted, NSError * _Nullable error, NSArray * _Nullable declinedPermissions) {
+                    if (!granted) {
+                        UIAlertView *alert;
+                        // Handle error
+                        alert = [[UIAlertView alloc] initWithTitle:@"Gigya Publish User Action"
+                                                           message:error.description
+                                                          delegate:nil
+                                                 cancelButtonTitle:@"OK"
+                                                 otherButtonTitles:nil
+                                 ];
+                        [alert show];
+                        return;
+                    }
+                }];
             }
         }];
-        
         
         NSMutableDictionary *userAction = [NSMutableDictionary dictionary];
         [userAction setObject:@"Gigya iOS SDK Demos" forKey:@"title"];

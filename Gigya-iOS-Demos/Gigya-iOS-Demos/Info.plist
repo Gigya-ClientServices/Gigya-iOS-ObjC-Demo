@@ -51,8 +51,31 @@
 	<true/>
 	<key>GooglePlusClientID</key>
 	<string>224059159380-llqo0j946bbl3s4rqu35kkolpmhpl07h.apps.googleusercontent.com</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>com.gigya.$(PRODUCT_NAME:rfc1034identifier)</string>
+		<string>com.google.gppconsent</string>
+		<string>gplus</string>
+		<string>com-google-gidconsent-google</string>
+		<string>com-google-gidconsent-youtube</string>
+		<string>com-google-gidconsent</string>
+		<string>com.google.gppconsent.2.4.1</string>
+		<string>com.google.gppconsent.2.4.0</string>
+		<string>googlechrome</string>
+		<string>googlechrome-x-callback</string>
+		<string>fb</string>
+		<string>fbshareextension</string>
+		<string>fbauth2</string>
+		<string>fbapi</string>
+		<string>fb-messenger-api</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -74,27 +97,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>LSApplicationQueriesSchemes</key>
-	<array>
-    <string>com.gigya.$(PRODUCT_NAME:rfc1034identifier)</string>
-    <string>com.google.gppconsent</string>
-    <string>gplus</string>
-    <string>com-google-gidconsent-google</string>
-    <string>com-google-gidconsent-youtube</string>
-    <string>com-google-gidconsent</string>
-    <string>com.google.gppconsent.2.4.1</string>
-    <string>com.google.gppconsent.2.4.0</string>
-    <string>googlechrome</string>
-    <string>googlechrome-x-callback</string>
-    <string>fb</string>
-    <string>fbshareextension</string>
-    <string>fbauth2</string>
-    <string>fbapi</string>
-    <string>fb-messenger-api</string>
-	</array>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-	    <key>NSAllowsArbitraryLoads</key><true/>
-	</dict>
 </dict>
 </plist>
