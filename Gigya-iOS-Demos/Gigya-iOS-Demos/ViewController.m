@@ -83,16 +83,22 @@
 
 - (IBAction)mobileSessionCheckButtonAction:(id)sender {
     __block NSString *msg;
+    __block bool isSent = false;
+    __block AppDelegate *ag = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+
     // If there is no Gigya session
     if (![Gigya isSessionValid]) {
         msg = @"You are not logged in.";
 
     } else {
+        isSent = true;
         GSRequest *request = [GSRequest requestForMethod:@"accounts.getAccountInfo"];
         [request sendWithResponseHandler:^(GSResponse *response, NSError *error) {
             if (!error) {
                 self.user = (GSAccount *)response;
                 msg = [@"User is logged in\n" stringByAppendingFormat: @"%@ %@ (%@)", response[@"profile"][@"firstName"], response[@"profile"][@"lastName"], response[@"profile"][@"email"]];
+
+                [ag alertForView:self title:@"Alert" message:msg button:@"OK"];
             }
             else {
                 NSLog(@"Got error on getAccountInfo: %@", error);
@@ -100,8 +106,9 @@
         }];
     }
 
-    AppDelegate *ag = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    [ag alertForView:self title:@"Alert" message:msg button:@"OK"];
+    if (!isSent) {
+        [ag alertForView:self title:@"Alert" message:msg button:@"OK"];
+    }
     
 }
 
