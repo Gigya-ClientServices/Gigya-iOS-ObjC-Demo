@@ -39,6 +39,7 @@
 		52BCE2401A49028500924AD8 /* GSWebBridgeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCE2381A49028500924AD8 /* GSWebBridgeController.m */; };
 		52BCE2421A49028500924AD8 /* PublishActionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCE23C1A49028500924AD8 /* PublishActionController.m */; };
 		52BCE2451A4AA85600924AD8 /* G_256.png in Resources */ = {isa = PBXBuildFile; fileRef = 52BCE2441A4AA85600924AD8 /* G_256.png */; };
+		E1CCF6E1A997C335298D8922 /* libPods-Gigya-iOS-Demos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D635379FE378044EFF0E988 /* libPods-Gigya-iOS-Demos.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,9 @@
 		52BCE23B1A49028500924AD8 /* PublishActionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublishActionController.h; sourceTree = "<group>"; };
 		52BCE23C1A49028500924AD8 /* PublishActionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublishActionController.m; sourceTree = "<group>"; };
 		52BCE2441A4AA85600924AD8 /* G_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = G_256.png; sourceTree = "<group>"; };
+		8D635379FE378044EFF0E988 /* libPods-Gigya-iOS-Demos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Gigya-iOS-Demos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC394F590BDA6AE942624F7B /* Pods-Gigya-iOS-Demos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigya-iOS-Demos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gigya-iOS-Demos/Pods-Gigya-iOS-Demos.debug.xcconfig"; sourceTree = "<group>"; };
+		E68547C10BB9BABC105A9604 /* Pods-Gigya-iOS-Demos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigya-iOS-Demos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gigya-iOS-Demos/Pods-Gigya-iOS-Demos.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,7 @@
 				52BCE2241A48D8BE00924AD8 /* SystemConfiguration.framework in Frameworks */,
 				52341FCC1B0D1D38008EBE29 /* FBSDKLoginKit.framework in Frameworks */,
 				52BCE2251A48D8BE00924AD8 /* UIKit.framework in Frameworks */,
+				E1CCF6E1A997C335298D8922 /* libPods-Gigya-iOS-Demos.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				527573B31DC2C20500B3F2D5 /* SafariServices.framework */,
+				8D635379FE378044EFF0E988 /* libPods-Gigya-iOS-Demos.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -149,6 +155,7 @@
 				52BCE1F81A48A65900924AD8 /* Gigya-iOS-DemosTests */,
 				52BCE1DD1A48A65800924AD8 /* Products */,
 				1D4FC73A3E8168BB7F9D43A1 /* Frameworks */,
+				9DE4962132D5A8800D978C7B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -237,6 +244,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9DE4962132D5A8800D978C7B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC394F590BDA6AE942624F7B /* Pods-Gigya-iOS-Demos.debug.xcconfig */,
+				E68547C10BB9BABC105A9604 /* Pods-Gigya-iOS-Demos.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -244,9 +260,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52BCE1FF1A48A65900924AD8 /* Build configuration list for PBXNativeTarget "Gigya-iOS-Demos" */;
 			buildPhases = (
+				897753D330237959116A56C8 /* [CP] Check Pods Manifest.lock */,
 				52BCE1D81A48A65800924AD8 /* Sources */,
 				52BCE1D91A48A65800924AD8 /* Frameworks */,
 				52BCE1DA1A48A65800924AD8 /* Resources */,
+				4100670FDE1EE59DE0D16502 /* [CP] Embed Pods Frameworks */,
+				AD7F322780513CE02F625C12 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -333,6 +352,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4100670FDE1EE59DE0D16502 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gigya-iOS-Demos/Pods-Gigya-iOS-Demos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		897753D330237959116A56C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AD7F322780513CE02F625C12 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gigya-iOS-Demos/Pods-Gigya-iOS-Demos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		52BCE1D81A48A65800924AD8 /* Sources */ = {
@@ -473,6 +540,7 @@
 		};
 		52BCE2001A48A65900924AD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC394F590BDA6AE942624F7B /* Pods-Gigya-iOS-Demos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -495,6 +563,7 @@
 		};
 		52BCE2011A48A65900924AD8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E68547C10BB9BABC105A9604 /* Pods-Gigya-iOS-Demos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
